@@ -10,7 +10,7 @@ body{
     background-attachment: fixed;
 }
 nav{
-    position: relative;
+    position:relative;
     z-index: 1;
 }
 
@@ -18,7 +18,6 @@ nav{
     background: #000000;
     height: 50px;
     width: 100%;
-
     position:fixed;
 }
 
@@ -64,3 +63,40 @@ a:focus, a:hover{
 .titulo h1{
     margin-top: 20px;
 }
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .nav-menu { grid-area: 1 / 1 / 2 / 6; }
+    .main { grid-area: 2 / 1 / 5 / 5; }
+    .aside { grid-area: 2 / 5 / 5 / 6; }
+    .footer { grid-area: 5 / 1 / 6 / 6; }
+
+    header{
+        background-color: darkgreen;
+        border: #000000 solid 2px;
+    }
+
+    nav{
+        background-color: #555555;
+        border: #000000 solid 2px;
+    }
+    
+    main {
+        background-color: brown;
+        border: #000000 solid 2px;
+        height: 500px;
+    }
+    aside{
+        background-color: aqua;
+        border: #000000 solid 2px;
+
+    }
+    footer {
+        background-color: chartreuse;
+        border: #000000 solid 2px;
+    }
