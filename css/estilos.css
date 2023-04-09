@@ -6,6 +6,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-image: url(/img/fondo.png);
+    background-attachment: fixed;
 }
 
 nav{
