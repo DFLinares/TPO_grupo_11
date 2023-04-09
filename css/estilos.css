@@ -5,10 +5,10 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(/img/fondo.png);
+    /* Created with https://www.css-gradient.com */
+    background: conic-gradient(from 45deg, #14203A, #182954);
     background-attachment: fixed;
 }
-
 nav{
     position: relative;
     z-index: 1;
