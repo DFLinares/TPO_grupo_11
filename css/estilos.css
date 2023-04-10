@@ -80,11 +80,6 @@ a:focus, a:hover{
         background-color: darkgreen;
         border: #000000 solid 2px;
     }
-
-    nav{
-        background-color: #555555;
-        border: #000000 solid 2px;
-    }
     
     main {
         background-color: brown;
