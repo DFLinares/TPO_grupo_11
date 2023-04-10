@@ -25,9 +25,10 @@ nav{
     position:absolute;
     color: #FFFFFF;
     font-size: 25px;
-    top: 8px;
+    top: 20px;
     left: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-menu ul{
@@ -39,7 +40,7 @@ nav{
 .nav-opciones li{
     display: inline-block;
     line-height: 50px;
-    margin: 0 5px;
+    margin: 10px 5px;
 }
 
 .nav-opciones li a{
@@ -75,11 +76,6 @@ a:focus, a:hover{
     .main { grid-area: 2 / 1 / 5 / 5; }
     .aside { grid-area: 2 / 5 / 5 / 6; }
     .footer { grid-area: 5 / 1 / 6 / 6; }
-
-    header{
-        background-color: darkgreen;
-        border: #000000 solid 2px;
-    }
     
     main {
         background-color: brown;
