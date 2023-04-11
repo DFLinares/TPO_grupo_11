@@ -11,31 +11,79 @@
 
     <link rel="stylesheet" href="css/estilos.css">
     <title>Mundo IT</title>
+
 </head>
+
 <body>
+
+    <header>
+
+        <nav class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+            <label class="logo">Mundo IT</label>
+                <ul class="nav-opciones">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <div class="parent"> 
+        <main class="main">
+
+            <h1>Contacto</h1>
+            <div>
+                <p>En este espacio puede dejarnos sus consultas y comentarios, asi como sugerencias para mejorar nuestros servicios</p>
+            </div>
+            
+            <form class="form" action="mailto: constanzagcastillo@gmail.com" method="post">
+                <ul>
+                    <li><!-- NOMBRE -->
+                        <label for="">Nombre</label>
+                        <Input type="text" placeholder="Ingrese su nombre" name="nombre"></Input>
+                        
+                    </li>
+                    <!-- APELLIDO -->
+                    <li>
+                        <label for="">Apellido</label>
+                        <Input type="text" placeholder="Ingrese su apellido" name="apellido"></Input>
+                        
+                    </li>
+
+
+                   <!--  CORREO ELECTRONICO-->
+                    <li>
+                        <label for="">Correo Electronico</label>
+                        <Input type="email" placeholder="Ingrese su correo electronico" name="email"></Input>
+                    </li>
+
+                    <li> <!-- Tipo de Consulta-->
+                        <label for="">Tipo de Consulta</label>
+                        <input type="checkbox" name="" id="tipo de consulta">
+                    </li>
+                    <li><!--Consulta-->
+                        <label for="">Consulta</label>
+                        <input type="text" placeholder=" Ingrese su consulta" name="question">
+                    </li>
+                </ul>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </main>
+
+        <aside class="aside">
+            <h1>Destacados</h1>
+        </aside>
+
+        <footer class="footer">
+            <h1>FOOTER</h1>
+        </footer>
+    </div>
     <body>
-        <div class="parent"> 
-            <nav class="nav-menu">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-                <label class="logo">Mundo IT</label>
-                    <ul class="nav-opciones">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-            </nav>
-            <main class="main">
-                <h1>MAIN</h1>
-            </main>
-            <aside class="aside">
-                <h1>ASIDE</h1>
-            </aside>
-            <footer class="footer">
-                <h1>FOOTER</h1>
-            </footer>
-        </div>
+        
 
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
 </body>
