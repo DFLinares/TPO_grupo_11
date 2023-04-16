@@ -24,10 +24,8 @@ nav{
 .logo{
     position:absolute;
     color: #FFFFFF;
-    font-size: 25px;
-    top: 20px;
+    max-height: 100%;
     left: 20px;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -88,6 +86,5 @@ a:focus, a:hover{
 
     }
     footer {
-        background-color: chartreuse;
         border: #000000 solid 2px;
     }
