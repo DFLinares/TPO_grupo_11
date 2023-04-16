@@ -76,8 +76,9 @@ a:focus, a:hover{
     main {
         background-color: brown;
         border: #000000 solid 2px;
-        height: 500px;
+        display: flex;
     }
+
     aside{
         background-color: aqua;
         border: #000000 solid 2px;
@@ -86,6 +87,7 @@ a:focus, a:hover{
 
     footer{
         position: relative;
+        border-top: #000000 solid 1px;
     }
     .footer {
         height: 50%;
