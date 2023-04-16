@@ -59,9 +59,7 @@ a:focus, a:hover{
 #check{
     display: none;
 }
-.titulo h1{
-    margin-top: 20px;
-}
+
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -86,5 +84,36 @@ a:focus, a:hover{
 
     }
     footer {
-        border: #000000 solid 2px;
+        height: 50%;
+        background: #000000;
+        color: #FFFFFF;
+    }
+
+    .social{
+        width: 50%;
+        float: left;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+    .social label a{
+        background: #000000;
+    }
+
+    .social label i{
+        font-size: 20px;
+        padding: 0 10px;
+        color: #FFFFFF;
+    }
+
+    .social label i:hover{
+        color:#C189DB;
+    }
+
+    .copy{
+        width: 50%;
+        float: left;
+        margin-top: 20px;
+        text-align: left;
     }
