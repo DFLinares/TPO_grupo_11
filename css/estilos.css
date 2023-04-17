@@ -83,7 +83,7 @@ a:focus, a:hover{
     }
     
     main {
-        background-color: brown;
+        background-color: rgb(62, 84, 117);
         border: #000000 solid 2px;
         height: 500px;
     }
@@ -98,5 +98,3 @@ a:focus, a:hover{
         border: #000000 solid 2px;
     }
 
-
-   
