@@ -89,13 +89,13 @@ a:focus, a:hover{
     }
 
     .item1{
-        width: 70%;
+        width: 900px;
         height: 500px;
         border: #000000 solid;
     }
 
     .placa{
-        width: 100%;
+        width: 900px;
         height: 400px;
     }
 
@@ -104,24 +104,24 @@ a:focus, a:hover{
     }
 
     .item2{
-        width: 32%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
 
     }
 
     .item3{
-        width: 32%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
     }
 
     .item4{
-        width: 32%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
     }
 
     .item5{
-        width: 32%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
     }
     aside{
         background-color: aqua;
