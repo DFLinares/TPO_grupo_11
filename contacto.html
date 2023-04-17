@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/contactoEstilos.css">
-     
-    
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <title>Mundo IT</title>
 
@@ -26,90 +26,96 @@
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
             <label class="logo">Mundo IT</label>
-                <ul class="nav-opciones">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <ul class="nav-opciones">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
+    
     </header class="container">
 
-    <div class="parent" > 
+    <div class="parent">
         <main class="main">
 
             <h1>Contacto</h1>
 
             <div>
-                <p>En este espacio puede dejarnos sus consultas y comentarios, asi como sugerencias para mejorar nuestros servicios</p>
+                <p>En este espacio puede dejarnos sus consultas y comentarios, asi como sugerencias para mejorar
+                    nuestros servicios</p>
             </div>
-            
+
+
             <form class="form" action="mailto: constanzagcastillo@gmail.com" method="post">
                 <ul>
-                    <div> 
-                        <li><!-- NOMBRE -->
-                        <label for="">Nombre</label>
-                        <Input type="text" placeholder="Ingrese su nombre" name="nombre" required></Input>
-                        </li>
-
-                    </div>
-
                     <div>
-                        <!-- APELLIDO -->
-                    <li>
-                        <label for="">Apellido</label>
-                        <Input type="text" placeholder="Ingrese su apellido" name="apellido" required></Input>
+     <!-- NOMBRE -->
+                        <li>
+                            <label for="">Nombre</label>
+                            <Input type="text" placeholder="Ingrese su nombre" name="nombre" required></Input>
+                        </li>
+    
+     <!-- APELLIDO -->
                         
-                    </li>
+                            <li>
+                                <label for="">Apellido</label>
+                                <Input type="text" placeholder="Ingrese su apellido" name="apellido" required></Input>
+        
+                            </li>
                     </div>
 
+    <!--  CORREO ELECTRONICO-->
                     <div>
-                        <!--  CORREO ELECTRONICO-->
-                    <li>
-                        <label for="">Correo Electronico</label>
-                        <Input type="email" placeholder="Ingrese su" name="email" required></Input>
-                    </li>
-                    </div>
-
-                    <div>
-                        <li> <!-- Tipo de Consulta-->
-                            <label for="">Tipo de Consulta</label>
-                            <input type="checkbox" name="" id="tipo de consulta">
+                        <li>
+                            <label for="">Correo Electronico</label>
+                            <Input type="email" placeholder="xxxxx@mail.com" name="email" required></Input>
                         </li>
                     </div>
-
+   <!-- Tipo de Comentario-->                
                     <div>
-                        <li><!--Consulta-->
-                            <label for="">Mensaje</label>
-                            <input type="text" placeholder="Mensaje" name="question" >
+                        <li> 
+                            <label for="">Tipo de Comentario</label>
+                            <select name="Tipo de Comentario" id="">
+                                <option>Información</option>
+                                <option>Sugerencia</option>
+                                <option>Suscripción</option>
+                                <option>Otro</option>
+                            </select>
+                            
                         </li>
-                    </div>
-                   
+                    </div>    
+                    
+
+     <!--Mensaje de Consulta-->
+                       <p>
+                        <textarea name="comentario" rows="10" cols="50">Mensaje...</textarea>
+                       </p> 
+                        
                 </ul>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-                
 
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="BORRAR">
             </form>
-        </main>
+            </main>
 
-        <aside class="aside">
-            
-        </aside>
+                <aside class="aside">
 
-        <footer class="footer">
-            margin
-            <h1>FOOTER</h1>
-            <p> Todos los derechos reservados al Grupo 11 &copy; 2023 </p>
-        </footer>
-        
+                </aside>
+
+                <footer class="footer">
+                    margin
+                    <h1>FOOTER</h1>
+                    <p> Todos los derechos reservados al Grupo 11 &copy; 2023 </p>
+                </footer>
+
     </div>
-   
+
     <body>
-        
-    <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
- <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
-</body>
+
+        <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </body>
 
 </html>
