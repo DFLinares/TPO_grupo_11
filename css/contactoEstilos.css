@@ -98,16 +98,16 @@ header {
 }
 
 main {
-    background-color: rgb(62, 84, 117);
+    background-color: rgb(189, 207, 233);
     border: #000000 solid 2px;
     height: 500px;
 }
 
-/*aside {
+aside {
     background-color: rgb(173, 192, 209);
     border: #000000 solid 2px;
 
-}*/
+}
 
 footer {
     background-color: chartreuse;

@@ -45,36 +45,50 @@
                 <p>En este espacio puede dejarnos sus consultas y comentarios, asi como sugerencias para mejorar
                     nuestros servicios</p>
             </div>
-
-
             <form class="form" action="mailto: constanzagcastillo@gmail.com" method="post">
+                
                 <ul>
                     <div>
      <!-- NOMBRE -->
-                        <li>
-                            <label for="">Nombre</label>
-                            <Input type="text" placeholder="Ingrese su nombre" name="nombre" required></Input>
-                        </li>
+                        <!-- <li> -->
+                            <div class="row">
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                                </div>
+                              </div>
+
+                            <!-- <label for="">Nombre</label>
+                            <Input type="text" placeholder="Ingrese su nombre" name="nombre" required></Input> -->
+                        <!-- </li> -->
     
      <!-- APELLIDO -->
                         
-                            <li>
+                            <!-- <li>
                                 <label for="">Apellido</label>
                                 <Input type="text" placeholder="Ingrese su apellido" name="apellido" required></Input>
         
-                            </li>
+                            </li> -->
                     </div>
 
     <!--  CORREO ELECTRONICO-->
-                    <div>
+                    <div class="mb-3">
+                        <label for="Ingrese su correo electronico" class="form-label">Correo Electronico</label>
+                        <input type="text" class="form-control" id="Ingrese su correo electronico" placeholder="Ingrese su correo electronico">
+                    </div>
+
+                    <!-- <div>
+                        
                         <li>
                             <label for="">Correo Electronico</label>
                             <Input type="email" placeholder="xxxxx@mail.com" name="email" required></Input>
                         </li>
-                    </div>
+                    </div> -->
    <!-- Tipo de Comentario-->                
                     <div>
-                        <li> 
+                       
                             <label for="">Tipo de Comentario</label>
                             <select name="Tipo de Comentario" id="">
                                 <option>Información</option>
@@ -83,19 +97,24 @@
                                 <option>Otro</option>
                             </select>
                             
-                        </li>
+                       
                     </div>    
                     
 
      <!--Mensaje de Consulta-->
-                       <p>
+                       <!-- <p>
                         <textarea name="comentario" rows="10" cols="50">Mensaje...</textarea>
-                       </p> 
-                        
+                       </p>  -->
+                       <div class="mb-3">
+                        <label for="Mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="Mensaje" rows="3"></textarea>
+                      </div>
                 </ul>
 
-                <input type="submit" value="ENVIAR">
-                <input type="reset" value="BORRAR">
+                <!-- <input type="submit" value="ENVIAR"> -->
+                <!-- <input type="reset" value="BORRAR">  -->
+                <button type="button" class="btn btn-primary btn-sm">ENVIAR</button>
+                <button type="button" class="btn btn-secondary btn-sm">BORRAR</button>
             </form>
             </main>
 
@@ -104,9 +123,9 @@
                 </aside>
 
                 <footer class="footer">
-                    margin
+                    
                     <h1>FOOTER</h1>
-                    <p> Todos los derechos reservados al Grupo 11 &copy; 2023 </p>
+                    
                 </footer>
 
     </div>
