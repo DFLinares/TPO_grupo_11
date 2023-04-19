@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="css/contactoEstilos.css"> -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <title>Mundo IT</title>
 </head>
+
 <body>
-    <div class="parent"> 
-        <header>
-            <nav class="nav-menu">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-                <a href="index.html" title="Ir a Home">
-                    <img src="/img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
-                </a>
-                    <ul class="nav-opciones">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-            </nav>
-        </header> 
-        <br><br><br><br><br>
+
+    <header>
+        <nav class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+            <a href="index.html" title="Ir a Home">
+                <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
+            </a>
+                <ul class="nav-opciones">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="quienes_somos.html">Quienes Somos</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+    </header> 
+
+    <div class="parent">
         <main class="main">
-            <h1>MAIN</h1>
+
+            <h1>Contacto</h1>
+
+            <div>
+                <p>En este espacio puede dejarnos sus consultas y comentarios, asi como sugerencias para mejorar
+                    nuestros servicios</p>
+            </div>
+            <form class="form" action="mailto: constanzagcastillo@gmail.com" method="post">
+
+                <ul>
+                    <div>
+                        <!-- NOMBRE -->
+                        <!-- <li> -->
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                            </div>
+                        </div>
+
+                        <!-- <label for="">Nombre</label>
+                            <Input type="text" placeholder="Ingrese su nombre" name="nombre" required></Input> -->
+                        <!-- </li> -->
+
+                        <!-- APELLIDO -->
+
+                        <!-- <li>
+                                <label for="">Apellido</label>
+                                <Input type="text" placeholder="Ingrese su apellido" name="apellido" required></Input>
+        
+                            </li> -->
+                    </div>
+
+                    <!--  CORREO ELECTRONICO-->
+                    <div class="mb-3">
+                        <label for="Ingrese su correo electronico" class="form-label">Correo Electronico</label>
+                        <input type="text" class="form-control" id="Ingrese su correo electronico"
+                            placeholder="Ingrese su correo electronico">
+                    </div>
+
+                    <!-- <div>
+                        
+                        <li>
+                            <label for="">Correo Electronico</label>
+                            <Input type="email" placeholder="xxxxx@mail.com" name="email" required></Input>
+                        </li>
+                    </div> -->
+                    <!-- Tipo de Comentario-->
+                    <div>
+
+                        <label for="">Tipo de Comentario</label>
+                        <select name="Tipo de Comentario" id="">
+                            <option>Información</option>
+                            <option>Sugerencia</option>
+                            <option>Suscripción</option>
+                            <option>Otro</option>
+                        </select>
+
+
+                    </div>
+
+
+                    <!--Mensaje de Consulta-->
+                    <!-- <p>
+                        <textarea name="comentario" rows="10" cols="50">Mensaje...</textarea>
+                       </p>  -->
+                    <div class="mb-3">
+                        <label for="Mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="Mensaje" rows="3"></textarea>
+                    </div>
+                </ul>
+
+                <!-- <input type="submit" value="ENVIAR"> -->
+                <!-- <input type="reset" value="BORRAR">  -->
+                <button type="button" class="btn btn-primary btn-sm">ENVIAR</button>
+                <button type="button" class="btn btn-secondary btn-sm">BORRAR</button>
+            </form>
         </main>
+
         <aside class="aside">
-            <h1>ASIDE</h1>
+
         </aside>
         <footer class="footer">
             <div class="footer-contenedor">
@@ -49,8 +134,10 @@
                 </div>
             </div>
         </footer>
+
     </div>
 
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
-</body>
+</body>>
+
 </html>

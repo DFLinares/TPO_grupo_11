@@ -1,3 +1,4 @@
+/*selector universal*/
 *{
     padding: 0;
     margin: 0;
@@ -74,7 +75,7 @@ a:focus, a:hover{
     .footer { grid-area: 12 / 1 / 13 / 13; }
     
     main {
-        background-color: brown;
+        background-color: rgb(62, 84, 117);
         border: #000000 solid 2px;
         display: flex;
         flex-wrap: wrap;
@@ -124,7 +125,7 @@ a:focus, a:hover{
         height: 400px;
     }
     aside{
-        background-color: aqua;
+        background-color: rgb(173, 192, 209);
         border: #000000 solid 2px;
 
     }
