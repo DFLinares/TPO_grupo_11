@@ -64,7 +64,7 @@ a:focus, a:hover{
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 75px repeat(10, 1fr) 75px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -81,6 +81,7 @@ a:focus, a:hover{
         flex-wrap: wrap;
         justify-content:center;
         align-items: flex-start;
+        min-height: 1000px;
     }
 
     main > div{
@@ -127,6 +128,7 @@ a:focus, a:hover{
     aside{
         background-color: rgb(173, 192, 209);
         border: #000000 solid 2px;
+        min-height: 1000px;
 
     }
 
