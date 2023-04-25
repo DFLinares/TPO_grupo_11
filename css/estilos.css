@@ -64,7 +64,7 @@ a:focus, a:hover{
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 75px repeat(10, 1fr) 75px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -81,45 +81,54 @@ a:focus, a:hover{
         flex-wrap: wrap;
         justify-content:center;
         align-items: flex-start;
+        min-height: 1000px;
     }
 
     main > div{
-        background-color: darkgreen;
+        background-color: rgb(48, 49, 48);
         color: #FFFFFF;
         margin: 20px;
-        padding: 15px;
-
-
     }
 
     .item1{
-        width: 100%;
+        width: 900px;
+        height: 500px;
+        border: #000000 solid;
+    }
+
+    .placa{
+        width: 900px;
         height: 400px;
     }
 
+    .main p{
+        padding: 10px;
+    }
+
     .item2{
-        width: 43%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
 
     }
 
     .item3{
-        width: 43%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
     }
 
     .item4{
-        width: 43%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
     }
 
     .item5{
-        width: 43%;
-        height: 300px;
+        width: 450px;
+        height: 400px;
     }
     aside{
         background-color: rgb(173, 192, 209);
         border: #000000 solid 2px;
+        min-height: 1000px;
 
     }
 
