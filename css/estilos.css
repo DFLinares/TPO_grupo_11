@@ -152,6 +152,20 @@ li a:focus, a:hover{
         padding: 0px 5px;
         text-align: justify;
     }
+
+    .item2{
+        display: flex;
+        max-width: 320px;
+        max-height: 100px;
+        text-size-adjust: 10px;
+        margin: 5px;
+    }
+
+    .imgbox1{
+        max-width: 100px;
+        max-height: 56px;
+    }
+
     /*Pie de Pagina*/
     footer{
         background: #000000;
