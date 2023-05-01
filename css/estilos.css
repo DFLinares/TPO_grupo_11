@@ -7,9 +7,11 @@
 body{
     font-family: 'Roboto', sans-serif;
     /* Created with https://www.css-gradient.com */
-    background: conic-gradient(from 45deg, #14203A, #182954);
+    /*background: conic-gradient(from 45deg, #14203A, #182954);*/
     background-attachment: fixed;
 }
+
+/*Comienzo del Nav*/
 nav{
     position:relative;
     z-index: 1;
@@ -52,7 +54,7 @@ position: relative;
 border-radius: 4px;
 }
 
-a:focus, a:hover{
+li a:focus, a:hover{
     background-color: #387ACF;
     transition: 0.5s;
 }
@@ -60,6 +62,7 @@ a:focus, a:hover{
 #check{
     display: none;
 }
+/*Fin del Nav*/
 
 .parent {
     display: grid;
@@ -75,70 +78,88 @@ a:focus, a:hover{
     .footer { grid-area: 12 / 1 / 13 / 13; }
     
     main {
-        background-color: rgb(62, 84, 117);
         border: #000000 solid 2px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        align-items: flex-start;
+        justify-content: center;
         min-height: 1000px;
     }
 
-    main > div{
-        background-color: rgb(48, 49, 48);
-        color: #FFFFFF;
+    .ordermain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 900px;
+        min-height: 1000px;
+    }
+
+    .ordermain > div{
+        background-color: #ededed;
+        color: #000000;
         margin: 20px;
+        box-sizing: content-box;
     }
 
     .item1{
-        width: 900px;
+        max-width: 680px;
         height: 500px;
-        border: #000000 solid;
     }
-
-    .placa{
-        width: 900px;
+        
+    .openai{
+        max-width: 680px;
         height: 400px;
     }
 
     .main p{
         padding: 10px;
     }
+    .main h2{
+        padding: 0px 10px;
+    }
 
-    .item2{
-        width: 450px;
-        height: 400px;
+    .item{
+        max-width: 320px;
+        height: 280px;
+        text-size-adjust: 10px;
+        margin: 5px;
 
     }
 
-    .item3{
-        width: 450px;
-        height: 400px;
+    div a:hover a:focus{
+        background-color: #ededed;
     }
 
-    .item4{
-        width: 450px;
-        height: 400px;
+    .imgbox{
+        max-width: 320px;
+        max-height: 180px;
     }
 
-    .item5{
-        width: 450px;
-        height: 400px;
-    }
     aside{
-        background-color: rgb(173, 192, 209);
         border: #000000 solid 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
         min-height: 1000px;
-
     }
 
+    aside > div{
+        background-color: #ededed;
+        color: #000000;
+        margin: 20px;
+        box-sizing: content-box;
+    }   
+
+    .aside h3{
+        padding: 0px 5px;
+        text-align: justify;
+    }
+    /*Pie de Pagina*/
     footer{
+        background: #000000;
         position: relative;
         border-top: #000000 solid 1px;
     }
     .footer {
-        height: 50%;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     .social{
@@ -150,7 +171,7 @@ a:focus, a:hover{
 
 
     .social label a{
-        background: #162548;
+        background: #000000;
     }
 
     .social label i{
@@ -169,6 +190,8 @@ a:focus, a:hover{
         margin-top: 30px;
         text-align: left;
     }
+    /*Fin Pie de Pagina*/
+
     .formulario-contenedor{
         background-color: azure;
     }
