@@ -137,28 +137,35 @@ li a:focus, a:hover{
         border: #000000 solid 2px;
         display: flex;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
+        align-content: flex-start;
         min-height: 1000px;
+    }
+
+    .title-aside{
+        background-color: #5139db;
+        max-width: 100%;
+        margin: 10px;
+        text-size-adjust: 20px;
     }
 
     aside > div{
         background-color: #ededed;
         color: #000000;
-        margin: 20px;
         box-sizing: content-box;
     }   
 
-    .aside h3{
-        padding: 0px 5px;
-        text-align: justify;
-    }
-
     .item2{
         display: flex;
-        max-width: 320px;
-        max-height: 100px;
+        max-width: 350px;
+        max-height: 56px;
         text-size-adjust: 10px;
+        text-align: justify;
         margin: 5px;
+    }
+
+    #tamañoaside{
+        max-height: 56px;
     }
 
     .imgbox1{
