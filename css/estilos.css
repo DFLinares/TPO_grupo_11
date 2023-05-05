@@ -132,6 +132,15 @@ li a:focus, a:hover{
 
     }
 
+    .item3{
+        display: flexbox;
+        max-width: 280px;
+        height: auto;
+        text-size-adjust: 10px;
+        margin: 5px;
+
+    }
+
     div a:hover a:focus{
         background-color: #ededed;
     }
