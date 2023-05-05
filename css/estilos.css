@@ -4,7 +4,15 @@
     margin: 0;
 }
 
+/*Selector de Temas y sus botones*/
+.oscuro{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}
+
 body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     /* Created with https://www.css-gradient.com */
     /*background: conic-gradient(from 45deg, #14203A, #182954);*/
@@ -93,8 +101,6 @@ li a:focus, a:hover{
     }
 
     .ordermain > div{
-        background-color: #ededed;
-        color: #000000;
         margin: 20px;
         box-sizing: content-box;
     }
@@ -150,8 +156,6 @@ li a:focus, a:hover{
     }
 
     aside > div{
-        background-color: #ededed;
-        color: #000000;
         box-sizing: content-box;
     }   
 
