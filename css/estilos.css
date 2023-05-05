@@ -27,31 +27,29 @@ nav{
 
 .nav-menu{
     background: #000000;
-    height: auto;
+    height: 75px;
     width: 100%;
     position:fixed;
 }
 
 .logo{
+    position:absolute;
     color: #FFFFFF;
     max-height: 100%;
     left: 20px;
-    width: auto;
-    max-width: 160px;
-    height: auto;
     cursor: pointer;
 }
 
 .nav-menu ul{
-    float: inline-end;
+    float: right;
     margin-right: 20px;
     list-style: none;
 }
 
 .nav-opciones li{
     display: inline-block;
-    line-height: auto;
-    margin: auto;
+    line-height: 50px;
+    margin: 10px 5px;
 }
 
 .nav-opciones li a{
