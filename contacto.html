@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,62 +8,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Mundo IT</title>
 </head>
-
 <body>
-
-    <header>
-        <nav class="nav-menu">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-            <a href="index.html" title="Ir a Home">
-                <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
-            </a>
-            <ul class="nav-opciones">
-                    <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
-                    <li><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
-                    <li><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
-                    <li><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
-                    <li><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
-            </ul>
-        </nav>
-    </header>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=3764102790&text=Hola, me gustaria comunicarme con ustes" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float "></i>
-    </a>
-    <div class="parent">
+    <div class="parent"> 
+        <header>
+            <nav class="nav-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                <a href="index.html" title="Ir a Home">
+                    <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
+                </a>
+                    <ul class="nav-opciones">
+                        <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
+                            <li><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
+                            <li><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
+                            <li><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
+                            <li><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
+                    </ul>
+            </nav>
+        </header>
+        
+        <a href="https://api.whatsapp.com/send?phone=3764102790&text=Hola, me gustaria comunicarme con ustes" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float "></i>
+        </a>  
         <main class="main">
             <section class="bio">
                 <div class="bio-encabezado">
-
                     <img src="img/consulta mail1.jpg" alt="imagen contacto">
-
                 </div>
-
             </section>
-
             <div>
                 <h4>Dejenos sus consultas y comentarios, asi como sugerencias para seguir mejorarando.</h4>
             </div>
             <form class="form" action="mailto: constanzagcastillo@gmail.com" method="post">
                 <h2>Contacto</h2>
-
                 <ul>
                     <div>
                         <!-- NOMBRE -->
                         <!-- <li> -->
                         <div class="row">
-
                             <div class="col">
                                 <label for="Nombre" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" placeholder="Ingrese su Nombre"
-                                    aria-label="Nombre">
+                                aria-label="Nombre">
                             </div>
                             <!-- Apellido -->
                             <div class="col">
@@ -74,14 +64,12 @@
                             </div>
                         </div>
                     </div>
-
                     <!--  CORREO ELECTRONICO-->
                     <div class="mb-3">
                         <label for="Ingrese su correo electronico" class="form-label">Correo Electronico</label>
                         <input type="text" class="form-control" id="Ingrese su correo electronico"
                             placeholder="Ingrese su correo electronico">
                     </div>
-
                     <!--Tipo de Consulta-->
                     <label for="Seleccione su Consulta" class="form-label">Seleccione su Consulta</label>
                     <select class="form-select" aria-label="Tipo de Mensaje">
@@ -91,47 +79,94 @@
                         <option value="3">Suscripción</option>
                         <option value="4">Otros</option>
                     </select>
-
-
                     <!--Mensaje de Consulta-->
-
                     <div class="mb-3">
                         <label for="Mensaje" class="form-label">Mensaje</label>
                         <textarea class="form-control" id="Mensaje" rows="3"></textarea>
                     </div>
                 </ul>
-
                 <button type="button" class="btn btn-primary btn-sm">ENVIAR</button>
                 <button type="button" class="btn btn-secondary btn-sm">BORRAR</button>
             </form>
         </main>
-
         <aside class="aside">
-            <img src="" alt="">
-
+            <img src="/img/noticiasdestacadas2.png" alt="NOTICIAS DESTACADAS" class="title-aside">
+            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/openai.png" alt="openai" class="imgbox1">
+                </a>
+                <p>OpenAI amenaza el popular proyecto GitHub con una demanda por el uso de la API</p>
+            </div>
+            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/memorias.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>Los mejores SSD 2023: de SATA económico a NVMe ultrarrápido.</p>
+            </div>
+            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/nvidia.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/transistor.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>El primer transistor de madera del mundo se corta a 1 Hz.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/placa.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>AMD se jacta de que las GPU Radeon de 16 GB comienzan en $ 499, a diferencia de Nvidia.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/ingenieros.png" alt="openai" class="imgbox1">
+                </a>
+                <p>Ingenieros del MIT desarrollan materiales 2D atómicamente delgados en circuitos de silicio.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/intel.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>Revisión de Intel Core i3-13100F: precios más altos, ganancias más pequeñas.</p>
+            </div>
+            <img src="/img/Noticiastechzone2.png" alt="NOTICIAS TECH ZONE" class="title-aside">
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/Asij7V0hlPM" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/h8t_ihdHz4w" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/VntjTr_fC2I" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/0RSegRyOjMg" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay;
+             clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>           
         </aside>
         <footer class="footer">
             <div class="footer-contenedor">
                 <div class="social">
-                    <label><a href="#"><i class="fa-brands fa-facebook"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-instagram"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-google"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-twitter"></i></a></label>
+                    <label><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+                    <label><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></label>
+                    <label><a href="https://www.google.com/?authuser=0" target="_blank"><i class="fa-brands fa-google"></i></a></label>
+                    <label><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></label>
                 </div>
                 <div class="copy">
                     <p>Comision #23034 - Grupo 11 &copy; 2023 Todos los Derechos Reservados.</p>
                 </div>
             </div>
         </footer>
-
     </div>
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
-    function cambiarModo() { 
-        var cuerpoweb = document.body; 
-        cuerpoweb.classList.toggle("oscuro"); 
-      } 
-    </script>
+        function cambiarModo() { 
+          var cuerpoweb = document.body; 
+          cuerpoweb.classList.toggle("oscuro"); 
+        } 
+      </script>
 </body>
-
 </html>

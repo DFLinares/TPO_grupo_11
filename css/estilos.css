@@ -53,13 +53,13 @@ nav{
 }
 
 .nav-opciones li a{
-color: #FFFFFF;
-text-decoration: none;
-text-transform: uppercase;
-font-size: 20px;
-padding: 5px 10px;
-position: relative;
-border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 4px;
 }
 
 li a:focus, a:hover{
@@ -127,7 +127,7 @@ li a:focus, a:hover{
         padding: 10px;
     }
     .item1 h2{
-     margin-top: 12px;
+        margin-top: 12px;
     }
 
     .item{
@@ -258,6 +258,7 @@ li a:focus, a:hover{
     .formulario-contenedor{
         background-color: azure;
     }
+
     /* Boton Whatsapp*/
     .float{
         position:fixed;
@@ -269,19 +270,16 @@ li a:focus, a:hover{
         color:#FFF;
         border-radius:50px;
         text-align:center;
-      font-size:30px;
+        font-size:30px;
         box-shadow: 2px 2px 3px #999;
-      z-index:100;
+        z-index:100;
     }
     .float:hover {
         text-decoration: none;
         color: #FFF;
-      background-color:#1ab152;
-        
+        background-color:#1ab152;
         animation: shake 1s;
-    
-     
-      animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
     }
     
     .my-float{
@@ -292,6 +290,6 @@ li a:focus, a:hover{
         width: auto;
         max-width: 110px;
         height: auto;
-        max-height: 22.5px; 
+        max-height: 22px; 
     }
     
