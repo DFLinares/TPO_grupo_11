@@ -107,7 +107,7 @@ li a:focus, a:hover{
 
     .item1{
         max-width: 680px;
-        height: 500px;
+        height: 520px;
         overflow: hidden;
         margin: 20px;
     }
@@ -135,6 +135,7 @@ li a:focus, a:hover{
         height: 280px;
         text-size-adjust: 10px;
         margin: 5px;
+        overflow: hidden;
 
     }
 
@@ -148,6 +149,13 @@ li a:focus, a:hover{
     .item4{
         max-width: 680px;
         height: 300px;
+    }
+
+    .item5{
+        max-width: 320px;
+        height: 280px;
+        text-size-adjust: 10px;
+        margin: 5px;
     }
 
     div a:hover a:focus{
@@ -169,10 +177,15 @@ li a:focus, a:hover{
     }
 
     .title-aside{
-        display: block;
         background-color: #000000;
         max-width: 200px;
         max-height: 21px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .video{
+        margin-bottom: 10px;
     }
 
     aside > div{
@@ -231,7 +244,7 @@ li a:focus, a:hover{
     }
 
     .social label i:hover{
-        color:#C189DB;
+        color:#63c8f0;
     }
 
     .copy{
