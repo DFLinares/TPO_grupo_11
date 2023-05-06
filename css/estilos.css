@@ -169,10 +169,10 @@ li a:focus, a:hover{
     }
 
     .title-aside{
-        background-color: #5139db;
-        max-width: 100%;
-        margin: 10px;
-        text-size-adjust: 20px;
+        display: block;
+        background-color: #000000;
+        max-width: 200px;
+        max-height: 21px;
     }
 
     aside > div{
