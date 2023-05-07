@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Mundo IT</title>
+</head>
+<body>
+    <div class="parent"> 
+        <header>
+            <nav class="nav-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                <a href="index.html" title="Ir a Home">
+                    <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
+                </a>
+                    <ul class="nav-opciones">
+                        <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
+                            <li><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
+                            <li><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
+                            <li><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
+                            <li><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
+                    </ul>
+            </nav>
+        </header>  
+        <main class="main">
+            <div class="ordermain">
+                <article class="ordenarticulo">
+                    <h1 class="proptitulo">OpenAI amenaza el popular proyecto GitHub con una demanda por el uso de la API</h1>
+                    <h3 class="propsubtitulo">GPT4Free utiliza las conexiones de otros sitios a OpenAI</h3>
+                    <img src="/img/openai.png" alt="chatgpt" class="propimg">
+                    <p class="ordenparrafo">Cualquiera puede usar ChatGPT de forma gratuita, pero si desea usar GPT4, el último modelo de idioma,debe pagar ChatGPT Plus, pagar por el acceso a la APIde OpenAI o buscar otro sitio que haya incorporado GPT4 en su propio chatbot gratuito. Hay sitios que usan OpenAI como Forefront(se abre en una pestaña nueva)y usted.com(se abre en una pestaña nueva), pero ¿qué pasa si quiereshacer tu propio bot y no quieres pagar por la API?</p>
+                    <p class="ordenparrafo">Un proyecto de GitHub llamado GPT4free(se abre en una pestaña nueva)le permite obtener acceso gratuito a los modelos GPT4 y GPT3.5 canalizando esas consultas a través de sitios como You.com(se abre en una pestaña nueva), Quora(se abre en una pestaña nueva)y CoCalc(se abre en una pestaña nueva)y devolviéndote las respuestas. El proyecto es el repositorio nuevo más popular de GitHub y obtuvo 14000 estrellas esta semana.</p>
+                    <p class="ordenparrafo">Ahora, según Xtekky, el estudiante europeo de ciencias de la computación que administra el repositorio, OpenAI ha enviado una carta exigiendo que elimine todo dentro de los cinco días o enfrentará una demanda.</p>  
+                    <p class="ordenparrafo">Entrevisté a Xtekky a través de Telegram y dijo que no cree que OpenAI deba dirigirse a él, ya que no se conecta directamente a la API de la empresa, sino que obtiene datos de otros sitios que pagan por sus propias licencias de API. Si los propietarios de esos sitios tienen un problema con sus scripts al consultarlos, deberían acercarse a él directamente, postuló.</p>
+                    <p class="ordenparrafo">Instalé GPT4Free en WSL2 (Subsistema de Windows para Linux) en mi PC. Solo tomó unos minutos, lo que implicó clonar el repositorio de Github, instalar algunas bibliotecas requeridas con pip y ejecutar un script de Python. Con el script iniciado, usé mi navegador web para visitar http://localhost:8501, la dirección que me dio, y se me presentó un chatbot en funcionamiento que se ejecutaba en mi PC.</p>
+                    <p class="ordenparrafo">En el backend, GPT4Free está visitando varias URL de API que sitios como You.com, un motor de búsqueda impulsado por IA que emplea el modelo GPT3.5 de OpenAI para sus respuestas, utilizan para sus propias consultas. Por ejemplo, el script principal de GPT4Free llega a la URL https://you.com/api/streamingSearch, le da varios parámetros y luego toma el JSON que devuelve y lo formatea. El repositorio GPT4Free también tiene scripts que obtienen datos de otros sitios como Quora, Forefront y TheB. Cualquier desarrollador emprendedor podría usar estos sencillos scripts para crear su propio bot.</p>
+                    <p class="ordenparrafo">Uno podría lograr lo mismo simplemente abriendo pestañas de los sitios. Puedo abrir pestañas de Phind, You, etc. en mi navegador y solicitudes de spam", dijo Xtekky. "Mi repositorio simplemente lo hace de una manera más simple".</p>
+                    <p class="ordenparrafo">Todos los sitios de los que extrae GPT4Free están pagando tarifas de OpenAI para usar sus grandes modelos de lenguaje. Entonces, cuando usa los scripts, esos sitios terminan pagando la factura de sus consultas, sin que usted los visite. Si esos sitios dependen de los ingresos publicitarios de sus sitios para compensar estos costos de API, están perdiendo dinero debido a estas consultas.</p>
+                    <p class="ordenparrafo">Xtekky dijo que está más que feliz de eliminar los scripts que usan las API de sitios individuales a pedido de los propietarios de esos sitios. Dijo que ya eliminó guiones que usan phind.com, ora.sh y writesonic.com. </p>
+                    <p class="ordenparrafo">Quizás lo más importante, señaló Xtekky, es que cualquiera de estos sitios podría bloquear los usos externos de sus API internas con medidas de seguridad comunes. Uno de los muchos métodos que podrían usar sitios como You.com es bloquear el tráfico de API de cualquier IP que no sea la suya.</p>
+                    <p class="ordenparrafo">Xtekky dijo que ha aconsejado a todos los sitios que le escribieron que deberían proteger sus API, pero ninguno de ellos lo ha hecho. Entonces, incluso si quita los scripts de su repositorio, cualquier otro desarrollador podría hacer lo mismo.</p>
+                    <p class="ordenparrafo">El desarrollador dijo que no cree que sea responsable de lo que otros hagan con su script y que OpenAI no debería apuntarlo a él por usar las API de otros sitios, que están disponibles sin protección en la web abierta. </p>
+                    <p class="ordenparrafo">"OpenAI también podría comunicarse con los sitios y advertirles/notificarlos y, en colaboración, acudir a mí y eliminarlos, pero parece que esta [amenaza legal] proviene únicamente de OpenAI y básicamente afirman que los estoy atacando directamente". él dijo. "Realmente no lo sé, pero parece que si un sitio usa la API de OpenAI, tiene la protección legal de OpenAI y OpenAI es responsable de los daños que recibe el sitio".</p>
+                    <p class="ordenparrafo">Xtekky inicialmente me dijo que no había decidido si cancelar el repositorio o no. Sin embargo, varias horas después de la primera publicación de esta historia, volvimos a conversar y me dijo que planea mantener el repositorio activo y decirle a OpenAI que, si quieren que lo eliminen, deben presentar una solicitud formal con GitHub en lugar de con él.</p>
+                    <p class="ordenparrafo">"Creo que me contactaron antes para presionarme para que borrara el repositorio yo mismo", dijo. "Pero la forma correcta debería ser una DMCA oficial real, a través de GitHub".</p>
+                    <p class="ordenparrafo">Incluso si se elimina el repositorio original, existe una gran posibilidad de que los miembros de la comunidad publiquen el código, y este método de acceso a GPT4 y GPT3.5, en otro lugar. Incluso si GPT4Free nunca hubiera existido, cualquiera puede encontrar formas de usar las API de estos sitios si continúan sin estar seguros.</p>
+                    <p class="ordenparrafo">"Los usuarios comparten y alojan este proyecto en todas partes", dijo. "La eliminación de mi repositorio será insignificante".</p>
+                    <p class="ordenparrafo">El domingo, Xtekky hizo un anuncio en el canal Discord del proyecto.(se abre en una pestaña nueva), diciendo que está haciendo algunos cambios en su chatbot, que vive aparte del repositorio de GitHub pero sirve como un ejemplo práctico de lo que puede hacer con él. No hemos enlazado al chatbot porque está en un nombre de dominio para adultos (pero no tiene contenido para adultos), pero puede encontrar un enlace en la página GPT4Free GitHub.</p>
+                    <p class="ordenparrafo">"Nos estamos alejando de nuestro método anterior e implementando un nuevo sistema que garantizará un procesamiento legal y sin problemas de las solicitudes. También estamos orgullosos de anunciar que se está trabajando en un cambio de marca junto con algunas otras correcciones generales que mejorarán su experiencia", publicó.</p>
+                    <p class="ordenparrafo">Xtekky me dijo que planea mover el chatbot a un dominio diferente y renombrarlo como g4f (abreviatura de GPT4Free) y cambiar el logotipo que usa, que se parece mucho al logotipo de OpenAI. No está claro si el nombre del repositorio cambiará.</p>
+                    <p class="ordenparrafo">Nos comunicamos con el correo electrónico de prensa de OpenAI para hacer comentarios y actualizaremos esta historia cuando recibamos una respuesta.</p>
+                    <p class="ordenparrafo">Si desea probarlo mientras todavía está allí, consulte GPT4Free en GitHub(se abre en una pestaña nueva). Si desea configurar su propio chatbot similar a ChatGPT sin entrar en conflicto con los abogados de OpenAI.</p>
+                </article>
+            </div>
+        </main>
+        <aside class="aside">
+            <img src="/img/noticiasdestacadas2.png" alt="NOTICIAS DESTACADAS" class="title-aside">
+            <div class="item2">
+                <a href="/noticia1.html" id="tamañoaside">
+                    <img src="/img/openai.png" alt="openai" class="imgbox1">
+                </a>
+                <p>OpenAI amenaza el popular proyecto GitHub con una demanda por el uso de la API</p>
+            </div>
+            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/memorias.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>Los mejores SSD 2023: de SATA económico a NVMe ultrarrápido.</p>
+            </div>
+            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/nvidia.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/transistor.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>El primer transistor de madera del mundo se corta a 1 Hz.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/placa.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>AMD se jacta de que las GPU Radeon de 16 GB comienzan en $ 499, a diferencia de Nvidia.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/ingenieros.png" alt="openai" class="imgbox1">
+                </a>
+                <p>Ingenieros del MIT desarrollan materiales 2D atómicamente delgados en circuitos de silicio.</p>
+            </div>            <div class="item2">
+                <a href="#" id="tamañoaside">
+                    <img src="/img/intel.jpg" alt="openai" class="imgbox1">
+                </a>
+                <p>Revisión de Intel Core i3-13100F: precios más altos, ganancias más pequeñas.</p>
+            </div>
+            <img src="/img/Noticiastechzone2.png" alt="NOTICIAS TECH ZONE" class="title-aside">
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/Asij7V0hlPM" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/h8t_ihdHz4w" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay;
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/VntjTr_fC2I" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/0RSegRyOjMg" 
+            title="YouTube video player" frameborder="4" allow="accelerometer; autoplay;
+             clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>           
+        </aside>
+        <footer class="footer">
+            <div class="footer-contenedor">
+                <div class="social">
+                    <label><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+                    <label><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></label>
+                    <label><a href="https://www.google.com/?authuser=0" target="_blank"><i class="fa-brands fa-google"></i></a></label>
+                    <label><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></label>
+                </div>
+                <div class="copy">
+                    <p>Comision #23034 - Grupo 11 &copy; 2023 Todos los Derechos Reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"> 
+        function cambiarModo() { 
+          var cuerpoweb = document.body; 
+          cuerpoweb.classList.toggle("oscuro"); 
+        } 
+      </script>
+</body>
+</html>

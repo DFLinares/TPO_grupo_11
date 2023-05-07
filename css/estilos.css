@@ -86,7 +86,6 @@ li a:focus, a:hover{
     .footer { grid-area: 12 / 1 / 13 / 13; }
     
     main {
-        border: #000000 solid 2px;
         display: flex;
         justify-content: center;
         min-height: 1000px;
@@ -167,8 +166,38 @@ li a:focus, a:hover{
         max-height: 180px;
     }
 
+    articulo.ordenarticulo{
+        display: flex;
+        flex-wrap: wrap;
+        border: solid #000000;
+    }
+
+    .proptitulo{
+        font-size: xx-large;
+        max-width: 711px;
+        margin-left: 7%;
+    }
+
+    .propsubtitulo{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        margin-left: 7%;
+    }
+
+    .propimg{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 8%;
+    }
+
+    .ordenparrafo{
+        max-width: 755px;
+        margin-left: 7%;
+        text-align: justify;
+
+    }
+
     aside{
-        border: #000000 solid 2px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
