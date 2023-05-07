@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="/carrusel.js"></script>
     <title>Mundo IT</title>
 </head>
 <body>
@@ -32,49 +33,19 @@
         </header>  
         <main class="main">
             <div class="ordermain">
-                <div class="item1">
-                    <a href="/noticia1.html">
-                        <img src="/img/openai.png" alt="openai" class="openai">
-                    </a>
-                    <h2>OpenAI amenaza el popular proyecto GitHub con una demanda por el uso de la API</h2>
-                    <p>GPT4Free utiliza las conexiones de otros sitios a OpenAI.</p>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="/img/placa.jpg" alt="Placa Video" class="imgbox">
-                    </a>
-                    <p>AMD se jacta de que las GPU Radeon de 16 GB comienzan en $ 499, a diferencia de Nvidia.</p>
-                </div>
-                <div class="item">   
-                    <a href="/noticia4.html">
-                        <img src="/img/transistor.jpg" alt="transistor" class="imgbox">
-                    </a>             
-                    <p>El primer transistor de madera del mundo se corta a 1 Hz.</p>
-                </div>
-                <div class="item">
-                    <a href="/noticia3.html">
-                        <img src="/img/nvidia.jpg" alt="nvidia" class="imgbox">
-                    </a>                
-                    <p>Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia.</p>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="/img/intel.jpg" alt="nvidia" class="imgbox">
-                    </a>                
-                    <p>Revisión de Intel Core i3-13100F: precios más altos, ganancias más pequeñas.</p>
-                </div>
-                <div class="item">
-                 <a href="#">
-                     <img src="/img/ingenieros.png" alt="ingenieros" class="imgbox">
-                    </a>                
-                    <p>Ingenieros del MIT desarrollan materiales 2D atómicamente delgados en circuitos de silicio.</p>
-                </div>
-                <div class="item">
-                    <a href="/noticia2.html">
-                        <img src="/img/memorias.jpg" alt="memorias" class="imgbox">
-                    </a>                
-                    <p>Los mejores SSD 2023: de SATA económico a NVMe ultrarrápido.</p>
-                </div>
+                <article class="ordenarticulo">
+                    <h1 class="proptitulo">Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia</h1>
+                    <h3 class="propsubtitulo">Ajuste de la configuración de energía a un nivel granular.</h3>
+                    <img src="/img/nvidia.jpg" alt="nvidia" class="propimg">
+                    <p class="ordenparrafo">¿Qué es mejor que una tarjeta gráfica rápida? Uno que es rápido y eficiente en energía al mismo tiempo. Incluso si posee una de las mejores tarjetas gráficas , es posible que no siempre necesite toda su potencia de fuego. Un desarrollador independiente, simonmacer, ha creado Nvidia Power Management(se abre en una pestaña nueva)(NVPMM), una utilidad de terceros para que los usuarios avanzados administren la potencia de su tarjeta gráfica GeForce. No es una herramienta oficial de Nvidia, por lo que los usuarios deben proceder con cautela.</p>
+                    <p class="ordenparrafo">El NVPMM aprovecha la interfaz de administración del sistema (SMI) de Nvidia, una herramienta de línea de comandos que permite a los usuarios administrar y monitorear los productos GeForce, Quadro, Tesla y GRID. Por lo tanto, NVPMM proporciona una GUI para los consumidores que no están en la interfaz de línea de comandos.</p>
+                    <p class="ordenparrafo">El panel de control de GeForce ya ofrece un modo primitivo de administración de energía y opciones para limitar la velocidad de fotogramas en las tarjetas gráficas Nvidia. Incluso Windows 11 tiene algunas opciones para limitar el consumo de energía de las tarjetas gráficas. Sin embargo, NVPMM ofrece más opciones a nivel granular.</p>
+                    <p class="ordenparrafo">El conjunto de funciones de NVPMM incluye la creación de perfiles de energía individuales, la definición de límites de energía por aplicación y el control adaptativo de la memoria de la tarjeta gráfica. La utilidad también viene con un monitor de estado de rendimiento básico. Obviamente, el software no puede desbloquear los límites de potencia en las tarjetas gráficas GeForce. En cambio, se adhiere al rango máximo y mínimo habilitado en la tarjeta gráfica. Sin embargo, el desarrollador afirma que la GeForce RTX 4090 tiene más alcance que las otras SKU basadas en Ada Lovelace .</p>
+                    <img src="/img/nvidia-2.jpg" alt="powernvidia" class="propimg">
+                    <p class="ordenparrafo">El software también presenta lo que el desarrollador llama la función de administración de límite de grupo de energía (PGLM). Permite a los usuarios establecer límites de potencia para tres grupos (A, B y C) y colocar aplicaciones en diferentes grupos para que se produzcan los efectos. Por ejemplo, puede establecer un límite de potencia de 320 W para el Grupo A y colocar el ejecutable Cyberpunk 2077 en ese grupo. Luego, una vez que NVPMM detecte que se está ejecutando Cyberpunk 2077 , limitará la tarjeta gráfica a 320 W. Salir del juego hará que la configuración vuelva a estar en stock.</p>
+                    <p class="ordenparrafo">Los usuarios pueden jugar libremente con los límites de potencia de las tarjetas gráficas GeForce. Sin embargo, dado que la configuración se guarda en el nivel de software, se restablece después de reiniciar el sistema. Es el mismo comportamiento con los overclocking manuales donde el software como MSI Afterburner o EVGA Precision X1 debe aplicar la configuración después de cada reinicio. Es idéntico a NVPMM. La aplicación debe instalarse y ejecutarse para aplicar el perfil de límite de energía del usuario cuando el sistema se inicia en el sistema operativo.</p>
+                    <p class="ordenparrafo">Algunos usuarios en los foros de Guru3D(se abre en una pestaña nueva)han informado que Norton y Windows Defender han marcado NVPMM como un troyano. Sin embargo, podrían ser falsos positivos debido a la naturaleza de lo que hace el software. La versión 2.5 pasó la prueba de Eset Antivirus, pero tres proveedores de Virus Total(se abre en una pestaña nueva)marcó el ejecutable como malicioso.</p>
+                </article>
             </div>
         </main>
         <aside class="aside">
@@ -92,12 +63,12 @@
                 <p>Los mejores SSD 2023: de SATA económico a NVMe ultrarrápido.</p>
             </div>
             <div class="item2">
-                <a href="/noticia3.html" id="tamañoaside">
+                <a href="#" id="tamañoaside">
                     <img src="/img/nvidia.jpg" alt="openai" class="imgbox1">
                 </a>
                 <p>Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia.</p>
             </div>            <div class="item2">
-                <a href="/noticia4.html" id="tamañoaside">
+                <a href="#" id="tamañoaside">
                     <img src="/img/transistor.jpg" alt="openai" class="imgbox1">
                 </a>
                 <p>El primer transistor de madera del mundo se corta a 1 Hz.</p>

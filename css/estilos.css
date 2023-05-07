@@ -197,6 +197,26 @@ li a:focus, a:hover{
 
     }
 
+    .carousel {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Para mejor rendimiento en dispositivos móviles */
+        margin-bottom: 20px; /* Para dar espacio a los indicadores */
+      }
+      
+      .slide {
+        flex: 0 0 100%;
+      }
+      
+      .slide img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+      
     aside{
         display: flex;
         flex-wrap: wrap;

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="/carrusel.js"></script>
     <title>Mundo IT</title>
 </head>
 <body>
@@ -32,49 +33,23 @@
         </header>  
         <main class="main">
             <div class="ordermain">
-                <div class="item1">
-                    <a href="/noticia1.html">
-                        <img src="/img/openai.png" alt="openai" class="openai">
-                    </a>
-                    <h2>OpenAI amenaza el popular proyecto GitHub con una demanda por el uso de la API</h2>
-                    <p>GPT4Free utiliza las conexiones de otros sitios a OpenAI.</p>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="/img/placa.jpg" alt="Placa Video" class="imgbox">
-                    </a>
-                    <p>AMD se jacta de que las GPU Radeon de 16 GB comienzan en $ 499, a diferencia de Nvidia.</p>
-                </div>
-                <div class="item">   
-                    <a href="/noticia4.html">
-                        <img src="/img/transistor.jpg" alt="transistor" class="imgbox">
-                    </a>             
-                    <p>El primer transistor de madera del mundo se corta a 1 Hz.</p>
-                </div>
-                <div class="item">
-                    <a href="/noticia3.html">
-                        <img src="/img/nvidia.jpg" alt="nvidia" class="imgbox">
-                    </a>                
-                    <p>Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia.</p>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="/img/intel.jpg" alt="nvidia" class="imgbox">
-                    </a>                
-                    <p>Revisión de Intel Core i3-13100F: precios más altos, ganancias más pequeñas.</p>
-                </div>
-                <div class="item">
-                 <a href="#">
-                     <img src="/img/ingenieros.png" alt="ingenieros" class="imgbox">
-                    </a>                
-                    <p>Ingenieros del MIT desarrollan materiales 2D atómicamente delgados en circuitos de silicio.</p>
-                </div>
-                <div class="item">
-                    <a href="/noticia2.html">
-                        <img src="/img/memorias.jpg" alt="memorias" class="imgbox">
-                    </a>                
-                    <p>Los mejores SSD 2023: de SATA económico a NVMe ultrarrápido.</p>
-                </div>
+                <article class="ordenarticulo">
+                    <h1 class="proptitulo">El primer transistor de madera del mundo se corta a 1 Hz</h1>
+                    <h3 class="propsubtitulo">Todavía no puede ejecutar Doom, pero está hecho de materiales renovables.</h3>
+                    <img src="/img/transistor.jpg" alt="transistor" class="propimg">
+                    <p class="ordenparrafo">La idea de los transistores y procesadores de silicio es así. . . 2022. Investigadores en Suecia han diseñado y probado los primeros transistores de madera. Los equipos de la Universidad de Linköping en Norrköping y el Instituto Real de Tecnología de Estocolmo han publicado un artículo titulado Modulación de corriente eléctrica en transistores electroquímicos de madera , que analiza la creación, las capacidades y el potencial del transistor electroquímico de madera (WECT) que han desarrollado recientemente.</p>
+                    <p class="ordenparrafo">Este WECT podría allanar el camino para la electrónica a base de madera que sea más sostenible y biodegradable. Además, la electrónica de madera podría ofrecer el control electrónico de las plantas vivas.</p>
+                    <h3 class="propsubtitulo">No nanómetros, sino centímetros</h3>
+                    <p class="ordenparrafo">Los lectores habituales estarán muy familiarizados con los últimos avances en tecnología de transistores de silicio. Casi a diario, nuestros titulares transmiten avances de Intel , Samsung y TSMC , luchando para crear procesos de vanguardia, con transistores medidos en nanómetros y funcionando a velocidades de varios gigahercios. Sin embargo, prepárese ahora, ya que el WECT diseñado y probado por los investigadores suecos medía 3 cm de ancho y tenía una frecuencia de conmutación de menos de un hercio.</p>
+                    <p class="ordenparrafo">No todos los dispositivos electrónicos necesitan las velocidades más rápidas y los transistores más pequeños. Ciertamente, el WECT como se describe es bastante grande y no le gusta que lo apresuren. “Hemos ideado un principio sin precedentes”, declaró Isak Engquist, profesor asociado sénior del Laboratorio de Electrónica Orgánica de la Universidad de Linköping en un comunicado de prensa de la universidad . “Sí, el transistor de madera es lento y voluminoso, pero funciona y tiene un enorme potencial de desarrollo”.</p>
+                    <img src="/img/transistor-2.jpg" alt="quimicos" class="propimg">
+                    <h3 class="propsubtitulo">Cómo la madera se convirtió en un transistor</h3>
+                    <p class="ordenparrafo">Para describir cómo se puede usar la madera para hacer un transistor, comencemos por observar los transistores convencionales que se usan ampliamente en dispositivos electrónicos. Los transistores de efecto de campo son un componente clave de la electrónica moderna y, por lo general, se fabrican a partir de semiconductores como el silicio o el germanio.</p>
+                    <p class="ordenparrafo">La naturaleza inherente de estos elementos permite que un transistor actúe como amplificador o interruptor cuando se aplica voltaje o corriente a sus terminales. Desde que se produjeron los primeros FET a mediados del siglo XX, la I+D ha sido constante en miniaturizarlos y persuadirlos para que funcionen a frecuencias extraordinarias.</p>
+                    <img src="/img/transistor-3.jpg" alt="preparaciontransistor" class="propimg">
+                    <p class="ordenparrafo">Para crear el WECT, los investigadores requirieron madera conductora (CW). Esto se hace eliminando la lignina de la madera a través de un proceso de solvente químico. Posteriormente, los canales donde estaba presente la lignina se reemplazan con un polímero conductor mixto de iones y electrones. En este proyecto, la madera elegida fue Balsa (por su deseable estructura de canales internos) y el polímero conductor PEDOT:PSS. Para construir el WECT, se utilizaron tres piezas de CW: una pieza como canal de transistor central y una como puerta superior e inferior.</p>
+                    <p class="ordenparrafo">El transistor WECT es notable, aunque no tiene el tipo de especificaciones que solemos discutir en Tom's Hardware . En lugar de ser un fin en sí mismo, los investigadores dicen que proporcionaron evidencia de las posibilidades del transistor de madera y esperan que inspiren trabajos y aplicaciones futuras.</p>
+                </article>
             </div>
         </main>
         <aside class="aside">
@@ -92,7 +67,7 @@
                 <p>Los mejores SSD 2023: de SATA económico a NVMe ultrarrápido.</p>
             </div>
             <div class="item2">
-                <a href="/noticia3.html" id="tamañoaside">
+                <a href="#" id="tamañoaside">
                     <img src="/img/nvidia.jpg" alt="openai" class="imgbox1">
                 </a>
                 <p>Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia.</p>
