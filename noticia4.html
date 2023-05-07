@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="/carrusel.js"></script>
     <title>Mundo IT</title>
 </head>
 <body>
@@ -23,17 +23,34 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                            <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
+                        <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
                             <li><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
                             <li><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
                             <li><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
                             <li><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
                     </ul>
             </nav>
-        </header> 
-        <br><br><br><br><br>
+        </header>  
         <main class="main">
-            <h1>MAIN</h1>
+            <div class="ordermain">
+                <article class="ordenarticulo">
+                    <h1 class="proptitulo">El primer transistor de madera del mundo se corta a 1 Hz</h1>
+                    <h3 class="propsubtitulo">Todavía no puede ejecutar Doom, pero está hecho de materiales renovables.</h3>
+                    <img src="/img/transistor.jpg" alt="transistor" class="propimg">
+                    <p class="ordenparrafo">La idea de los transistores y procesadores de silicio es así. . . 2022. Investigadores en Suecia han diseñado y probado los primeros transistores de madera. Los equipos de la Universidad de Linköping en Norrköping y el Instituto Real de Tecnología de Estocolmo han publicado un artículo titulado Modulación de corriente eléctrica en transistores electroquímicos de madera , que analiza la creación, las capacidades y el potencial del transistor electroquímico de madera (WECT) que han desarrollado recientemente.</p>
+                    <p class="ordenparrafo">Este WECT podría allanar el camino para la electrónica a base de madera que sea más sostenible y biodegradable. Además, la electrónica de madera podría ofrecer el control electrónico de las plantas vivas.</p>
+                    <h3 class="propsubtitulo">No nanómetros, sino centímetros</h3>
+                    <p class="ordenparrafo">Los lectores habituales estarán muy familiarizados con los últimos avances en tecnología de transistores de silicio. Casi a diario, nuestros titulares transmiten avances de Intel , Samsung y TSMC , luchando para crear procesos de vanguardia, con transistores medidos en nanómetros y funcionando a velocidades de varios gigahercios. Sin embargo, prepárese ahora, ya que el WECT diseñado y probado por los investigadores suecos medía 3 cm de ancho y tenía una frecuencia de conmutación de menos de un hercio.</p>
+                    <p class="ordenparrafo">No todos los dispositivos electrónicos necesitan las velocidades más rápidas y los transistores más pequeños. Ciertamente, el WECT como se describe es bastante grande y no le gusta que lo apresuren. “Hemos ideado un principio sin precedentes”, declaró Isak Engquist, profesor asociado sénior del Laboratorio de Electrónica Orgánica de la Universidad de Linköping en un comunicado de prensa de la universidad . “Sí, el transistor de madera es lento y voluminoso, pero funciona y tiene un enorme potencial de desarrollo”.</p>
+                    <img src="/img/transistor-2.jpg" alt="quimicos" class="propimg">
+                    <h3 class="propsubtitulo">Cómo la madera se convirtió en un transistor</h3>
+                    <p class="ordenparrafo">Para describir cómo se puede usar la madera para hacer un transistor, comencemos por observar los transistores convencionales que se usan ampliamente en dispositivos electrónicos. Los transistores de efecto de campo son un componente clave de la electrónica moderna y, por lo general, se fabrican a partir de semiconductores como el silicio o el germanio.</p>
+                    <p class="ordenparrafo">La naturaleza inherente de estos elementos permite que un transistor actúe como amplificador o interruptor cuando se aplica voltaje o corriente a sus terminales. Desde que se produjeron los primeros FET a mediados del siglo XX, la I+D ha sido constante en miniaturizarlos y persuadirlos para que funcionen a frecuencias extraordinarias.</p>
+                    <img src="/img/transistor-3.jpg" alt="preparaciontransistor" class="propimg">
+                    <p class="ordenparrafo">Para crear el WECT, los investigadores requirieron madera conductora (CW). Esto se hace eliminando la lignina de la madera a través de un proceso de solvente químico. Posteriormente, los canales donde estaba presente la lignina se reemplazan con un polímero conductor mixto de iones y electrones. En este proyecto, la madera elegida fue Balsa (por su deseable estructura de canales internos) y el polímero conductor PEDOT:PSS. Para construir el WECT, se utilizaron tres piezas de CW: una pieza como canal de transistor central y una como puerta superior e inferior.</p>
+                    <p class="ordenparrafo">El transistor WECT es notable, aunque no tiene el tipo de especificaciones que solemos discutir en Tom's Hardware . En lugar de ser un fin en sí mismo, los investigadores dicen que proporcionaron evidencia de las posibilidades del transistor de madera y esperan que inspiren trabajos y aplicaciones futuras.</p>
+                </article>
+            </div>
         </main>
         <aside class="aside">
             <img src="/img/noticiasdestacadas2.png" alt="NOTICIAS DESTACADAS" class="title-aside">
@@ -96,10 +113,10 @@
         <footer class="footer">
             <div class="footer-contenedor">
                 <div class="social">
-                    <label><a href="#"><i class="fa-brands fa-facebook"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-instagram"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-google"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-twitter"></i></a></label>
+                    <label><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+                    <label><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></label>
+                    <label><a href="https://www.google.com/?authuser=0" target="_blank"><i class="fa-brands fa-google"></i></a></label>
+                    <label><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></label>
                 </div>
                 <div class="copy">
                     <p>Comision #23034 - Grupo 11 &copy; 2023 Todos los Derechos Reservados.</p>
@@ -107,7 +124,6 @@
             </div>
         </footer>
     </div>
-
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
         function cambiarModo() { 
@@ -116,5 +132,4 @@
         } 
       </script>
 </body>
-
 </html>

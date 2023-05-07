@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="/carrusel.js"></script>
     <title>Mundo IT</title>
 </head>
 <body>
@@ -23,17 +23,30 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                            <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
+                        <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
                             <li><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
                             <li><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
                             <li><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
                             <li><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
                     </ul>
             </nav>
-        </header> 
-        <br><br><br><br><br>
+        </header>  
         <main class="main">
-            <h1>MAIN</h1>
+            <div class="ordermain">
+                <article class="ordenarticulo">
+                    <h1 class="proptitulo">Herramienta de terceros ahorra energía en tarjetas gráficas Nvidia</h1>
+                    <h3 class="propsubtitulo">Ajuste de la configuración de energía a un nivel granular.</h3>
+                    <img src="/img/nvidia.jpg" alt="nvidia" class="propimg">
+                    <p class="ordenparrafo">¿Qué es mejor que una tarjeta gráfica rápida? Uno que es rápido y eficiente en energía al mismo tiempo. Incluso si posee una de las mejores tarjetas gráficas , es posible que no siempre necesite toda su potencia de fuego. Un desarrollador independiente, simonmacer, ha creado Nvidia Power Management(se abre en una pestaña nueva)(NVPMM), una utilidad de terceros para que los usuarios avanzados administren la potencia de su tarjeta gráfica GeForce. No es una herramienta oficial de Nvidia, por lo que los usuarios deben proceder con cautela.</p>
+                    <p class="ordenparrafo">El NVPMM aprovecha la interfaz de administración del sistema (SMI) de Nvidia, una herramienta de línea de comandos que permite a los usuarios administrar y monitorear los productos GeForce, Quadro, Tesla y GRID. Por lo tanto, NVPMM proporciona una GUI para los consumidores que no están en la interfaz de línea de comandos.</p>
+                    <p class="ordenparrafo">El panel de control de GeForce ya ofrece un modo primitivo de administración de energía y opciones para limitar la velocidad de fotogramas en las tarjetas gráficas Nvidia. Incluso Windows 11 tiene algunas opciones para limitar el consumo de energía de las tarjetas gráficas. Sin embargo, NVPMM ofrece más opciones a nivel granular.</p>
+                    <p class="ordenparrafo">El conjunto de funciones de NVPMM incluye la creación de perfiles de energía individuales, la definición de límites de energía por aplicación y el control adaptativo de la memoria de la tarjeta gráfica. La utilidad también viene con un monitor de estado de rendimiento básico. Obviamente, el software no puede desbloquear los límites de potencia en las tarjetas gráficas GeForce. En cambio, se adhiere al rango máximo y mínimo habilitado en la tarjeta gráfica. Sin embargo, el desarrollador afirma que la GeForce RTX 4090 tiene más alcance que las otras SKU basadas en Ada Lovelace .</p>
+                    <img src="/img/nvidia-2.jpg" alt="powernvidia" class="propimg">
+                    <p class="ordenparrafo">El software también presenta lo que el desarrollador llama la función de administración de límite de grupo de energía (PGLM). Permite a los usuarios establecer límites de potencia para tres grupos (A, B y C) y colocar aplicaciones en diferentes grupos para que se produzcan los efectos. Por ejemplo, puede establecer un límite de potencia de 320 W para el Grupo A y colocar el ejecutable Cyberpunk 2077 en ese grupo. Luego, una vez que NVPMM detecte que se está ejecutando Cyberpunk 2077 , limitará la tarjeta gráfica a 320 W. Salir del juego hará que la configuración vuelva a estar en stock.</p>
+                    <p class="ordenparrafo">Los usuarios pueden jugar libremente con los límites de potencia de las tarjetas gráficas GeForce. Sin embargo, dado que la configuración se guarda en el nivel de software, se restablece después de reiniciar el sistema. Es el mismo comportamiento con los overclocking manuales donde el software como MSI Afterburner o EVGA Precision X1 debe aplicar la configuración después de cada reinicio. Es idéntico a NVPMM. La aplicación debe instalarse y ejecutarse para aplicar el perfil de límite de energía del usuario cuando el sistema se inicia en el sistema operativo.</p>
+                    <p class="ordenparrafo">Algunos usuarios en los foros de Guru3D(se abre en una pestaña nueva)han informado que Norton y Windows Defender han marcado NVPMM como un troyano. Sin embargo, podrían ser falsos positivos debido a la naturaleza de lo que hace el software. La versión 2.5 pasó la prueba de Eset Antivirus, pero tres proveedores de Virus Total(se abre en una pestaña nueva)marcó el ejecutable como malicioso.</p>
+                </article>
+            </div>
         </main>
         <aside class="aside">
             <img src="/img/noticiasdestacadas2.png" alt="NOTICIAS DESTACADAS" class="title-aside">
@@ -96,10 +109,10 @@
         <footer class="footer">
             <div class="footer-contenedor">
                 <div class="social">
-                    <label><a href="#"><i class="fa-brands fa-facebook"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-instagram"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-google"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-twitter"></i></a></label>
+                    <label><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+                    <label><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></label>
+                    <label><a href="https://www.google.com/?authuser=0" target="_blank"><i class="fa-brands fa-google"></i></a></label>
+                    <label><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></label>
                 </div>
                 <div class="copy">
                     <p>Comision #23034 - Grupo 11 &copy; 2023 Todos los Derechos Reservados.</p>
@@ -107,7 +120,6 @@
             </div>
         </footer>
     </div>
-
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
         function cambiarModo() { 
@@ -116,5 +128,4 @@
         } 
       </script>
 </body>
-
 </html>

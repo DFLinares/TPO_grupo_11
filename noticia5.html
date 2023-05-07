@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="/carrusel.js"></script>
     <title>Mundo IT</title>
 </head>
 <body>
@@ -23,17 +23,31 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                            <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
+                        <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
                             <li><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
                             <li><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
                             <li><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
                             <li><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
                     </ul>
             </nav>
-        </header> 
-        <br><br><br><br><br>
+        </header>  
         <main class="main">
-            <h1>MAIN</h1>
+            <div class="ordermain">
+                <article class="ordenarticulo">
+                    <h1 class="proptitulo">AMD se jacta de que las GPU Radeon de 16 GB comienzan en $ 499, a diferencia de Nvidia</h1>
+                    <h3 class="propsubtitulo">Radeon ofrece más VRAM a precios más bajos.</h3>
+                    <img src="/img/placa.jpg" alt="placa" class="propimg">
+                    <p class="ordenparrafo">Los productos Radeon de AMD no son ajenos a la lista de las mejores tarjetas gráficas . Sin embargo, el fabricante de chips también ha dicho que las tarjetas gráficas modernas deberían tener al menos 16 GB de memoria para impulsar los últimos títulos triple A. Sasa Marinkovic, director sénior de marketing de juegos de AMD, ha destacado en un nuevo tuit(se abre en una pestaña nueva)que las tarjetas gráficas Radeon de 16 GB de AMD comienzan en $ 499, a diferencia de Nvidia, donde no obtienes 16 GB hasta la GeForce RTX 4080 , que tiene un MSRP de $ 1,199.</p>
+                    <p class="ordenparrafo">La comparación de Marinkovic evidentemente se basa en el tamaño del subsistema de memoria y el precio. El rendimiento rasterizado y de trazado de rayos no se tiene en cuenta. Sin embargo, parece haber algunas discrepancias en los precios. Por ejemplo, el ejecutivo de AMD enumeró la Radeon RX 6800 con un precio de $499, lo que significa que no está usando el MSRP para comparar. La tarjeta gráfica basada en Navi 21 debutó en 2020 por $ 579 pero ahora se vende por tan solo $ 469(se abre en una pestaña nueva). Mientras tanto, enumeró la GeForce RTX 3070 de la competencia por $ 549, que no es ni su MSRP ($ 499) ni el modelo más barato ( $ 485(se abre en una pestaña nueva)) en el mercado.</p>
+                    <p class="ordenparrafo">Obviamente, no todas las tarjetas gráficas Radeon cuentan con 16 GB. Sin embargo, el fabricante de chips utiliza la serie Radeon RX 6800 como punto de partida. La serie Radeon RX 6700, como la Radeon RX 6700 XT , alcanza un máximo de 12 GB. Pero AMD no se equivoca. Las tarjetas gráficas Radeon del fabricante de chips generalmente ofrecen más memoria integrada a precios más bajos que las SKU de Nvidia GeForce RTX de la competencia. En esta generación, los consumidores principales no obtienen acceso a 16 GB de tarjetas Nvidia a menos que gasten más de $1,000. Las últimas Radeon RX 7900 XT y RX 7900 XTX de AMD ofrecen 20GB y 24GB con un precio de menos de $1,000.</p>
+                    <p class="ordenparrafo">Es gracioso que Marinkovic solo compare los productos Radeon de AMD con las ofertas de GeForce de Nvidia cuando hay un tercer jugador en el mercado. Si no consideramos el rendimiento y solo basamos la comparación en el precio, el título de tarjeta gráfica de 16 GB más barato pertenece a Arc A770 de 16 GB de Intel , que se vende por $ 349(se abre en una pestaña nueva).</p>
+                    <img src="/img/placa-2.jpg" alt="placa2" class="propimg">
+                    <p class="ordenparrafo">Lo que pasa con este tipo de declaraciones audaces es que tienes que respaldarlo, o eventualmente regresará y te morderá el trasero. ¿Recuerdas todo el fiasco de "Game Beyond 4GB" en 2020? AMD enfatizó cómo los 4 GB se habían quedado obsoletos y que las futuras tarjetas gráficas deberían tener 8 GB como mínimo. Poco más de año y medio después, el fabricante de chips lanzó la Radeon RX 6500 XT , que solo contaba con 4GB de memoria. Ya sea que crea en la coincidencia o no, la publicación del blog desapareció durante el lanzamiento de Radeon RX 6500 XT, pero AMD finalmente la volvió a publicar.</p>
+                    <p class="ordenparrafo">AMD todavía tiene muchas brechas de precios que llenar con su última línea RDNA 3. La serie Radeon RX 7900 ha estado disponible desde noviembre de 2022 y los consumidores han estado esperando ansiosamente las series Radeon RX 7800 o Radeon RX 7700. Es probable que el primero tenga 16 GB, pero la memoria del segundo probablemente sea más pequeña. Los SKU de nivel Radeon RX x700 de AMD nunca han tenido más de 12 GB, por lo que es mejor que AMD sorprenda a los consumidores o la última arrogancia del fabricante de chips no envejecerá bien.</p>
+                    <p class="ordenparrafo">Los juegos modernos son cada vez más exigentes, aunque algunos son malos puertos o carecen de optimización, como Star Wars Jedi: Survivor, que ha demostrado consumir hasta 21 GB de VRAM. No es una exageración pensar que las tarjetas gráficas de 16GB eventualmente se convertirán en la nueva norma.</p>
+                
+                </article>
+            </div>
         </main>
         <aside class="aside">
             <img src="/img/noticiasdestacadas2.png" alt="NOTICIAS DESTACADAS" class="title-aside">
@@ -96,10 +110,10 @@
         <footer class="footer">
             <div class="footer-contenedor">
                 <div class="social">
-                    <label><a href="#"><i class="fa-brands fa-facebook"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-instagram"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-google"></i></a></label>
-                    <label><a href="#"><i class="fa-brands fa-twitter"></i></a></label>
+                    <label><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+                    <label><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></label>
+                    <label><a href="https://www.google.com/?authuser=0" target="_blank"><i class="fa-brands fa-google"></i></a></label>
+                    <label><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></label>
                 </div>
                 <div class="copy">
                     <p>Comision #23034 - Grupo 11 &copy; 2023 Todos los Derechos Reservados.</p>
@@ -107,7 +121,6 @@
             </div>
         </footer>
     </div>
-
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
         function cambiarModo() { 
@@ -116,5 +129,4 @@
         } 
       </script>
 </body>
-
 </html>
