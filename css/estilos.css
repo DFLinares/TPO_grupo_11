@@ -392,20 +392,12 @@ li a:focus, a:hover{
     box-sizing: border-box;
     margin-top: 5%;
     padding-left: 25%;
-    padding-right: 50%;
+    padding-right: 30%;
     padding-bottom: 30%;
 }
 
-.form-contact{
-    width: 50%;
-}
-.form-contact{
-    width: 50%;
-    float: left;
-}
-
 .form-control{
-    width: 85%;
+    width: 100%;
     padding: 0.8rem;
     margin: 0.6rem 0.8rem;
     display: block;
