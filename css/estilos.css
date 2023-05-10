@@ -135,7 +135,7 @@ li a:focus, a:hover{
 
     #nodecoracion{
         text-decoration: none;
-        color: #000000;
+        color: #63c8f0;
     }
 
     #nodecoracion :hover{
@@ -243,7 +243,7 @@ li a:focus, a:hover{
     }
 
     #tamañoaside :hover{
-        background-color: #ffffff;
+        background-color: #747373;
         color: #3507a7;
     }
 
@@ -273,7 +273,7 @@ li a:focus, a:hover{
         display: flex;
         max-height: 56px;
         text-decoration: none;
-        color: #000000;
+        color: #63c8f0;
     }
 
 
