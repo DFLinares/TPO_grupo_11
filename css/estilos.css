@@ -71,6 +71,10 @@ li a:focus, a:hover{
     background-color: #000000;
 }
 
+#fondobtn{
+    background-color: #000000;
+}
+
 #check{
     display: none;
 }
