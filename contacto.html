@@ -34,7 +34,7 @@
             </nav>
         </header>
 
-        <a href="https://api.whatsapp.com/send?phone=3764102790&text=Hola, me gustaria comunicarme con ustes"
+        <a href="https://api.whatsapp.com/send?phone=3764102790&text=Hola, Hola, quisiera comunicarme con Mundo IT"
             class="float" target="_blank">
             <i class="fa fa-whatsapp my-float "></i>
         </a>
@@ -50,8 +50,9 @@
                     <h4> En este espacio podras realizar consultas y compartirnos tus intereses</h4>
                     <p>Si te apasiona el Mundo Tecnológico y las últimas Innovaciones, te invitamos a que te sumes a
                         nuestro Equipo de colaboradores y columnistas. TE ESPERAMOS!!</p>
-                    <div class="bio-formulario"><!--Contenedor hijo2 Formulario-->
-                        <form class="form-contact" action="mailto: constanzagcastillo@gmail.com" method="post"></form>
+                   
+                        <div class="bio-formulario"><!--Contenedor hijo2 Formulario-->
+                        <form action="https://formspree.io/f/xdovbjyz" method="POST" class="form-contact"></form>
                         <div class="row">
                             <!-- NOMBRE --> <input type="text" class="form-control" placeholder="Ingrese su Nombre"
                                 aria-label="Nombre">
@@ -167,13 +168,19 @@
             cuerpoweb.classList.toggle("oscuro");
         } 
     </script>
+    <!-- FORMSPREE -->
     <script>
         const $form = document.querySelector('#form')
-
-        $form.addEventListener('sumit', handlesubmit)
-        function handlesubmit{}
-
-
+        $form.addEventListener('submit', handlesubmit)
+        async function handlesubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, { method: this.method, body: form, headers: { "Accept": "application/json" } })
+            if (response.ok) {
+                this.reset()
+                alert("Gracias por su mensaje")
+            }
+        }
     </script>
 </body>
 
