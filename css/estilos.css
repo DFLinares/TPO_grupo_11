@@ -63,8 +63,12 @@ nav{
 }
 
 li a:focus, a:hover{
-    background-color: #000000;
+    background-color: #ffffff;
     transition: 0.5s;
+}
+
+#fondonegro :hover{
+    background-color: #000000;
 }
 
 #check{
@@ -125,8 +129,17 @@ li a:focus, a:hover{
     .main p{
         padding: 10px;
     }
-    .item1 h2{
+    .item1 a h2{
         margin-top: 12px;
+    }
+
+    #nodecoracion{
+        text-decoration: none;
+        color: #000000;
+    }
+
+    #nodecoracion :hover{
+        color: #3507a7;
     }
 
     .item{
@@ -155,10 +168,6 @@ li a:focus, a:hover{
         height: 280px;
         text-size-adjust: 10px;
         margin: 5px;
-    }
-
-    div a:hover a:focus{
-        background-color: #ededed;
     }
 
     .imgbox{
@@ -233,6 +242,11 @@ li a:focus, a:hover{
         margin-bottom: 10px;
     }
 
+    #tamañoaside :hover{
+        background-color: #ffffff;
+        color: #3507a7;
+    }
+
     .video{
         margin-bottom: 10px;
     }
@@ -256,8 +270,13 @@ li a:focus, a:hover{
     }
 
     #tamañoaside{
+        display: flex;
         max-height: 56px;
+        text-decoration: none;
+        color: #000000;
     }
+
+
 
     .imgbox1{
         max-width: 100px;
@@ -280,7 +299,6 @@ li a:focus, a:hover{
         margin-top: 30px;
         text-align: center;
     }
-
 
     .social label a{
         background: #000000;
@@ -369,6 +387,11 @@ li a:focus, a:hover{
     width: 100%;
     float: left;  
 }
+
+#noefecto :hover{
+    transform: scale(1);
+}
+
 .bio-gral-img img{
     width: 100%;
     padding-bottom: 5%;
