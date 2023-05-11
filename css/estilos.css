@@ -463,13 +463,12 @@ li a:focus, a:hover{
     border-radius: 5px;
     border: 1.5px soli #c7c7c7;
 }
-
-#mensaje{
-   width: 415px;
+#tipoMensaje{
+    width: 107%;
 }
 
 .send-btn{
-    display: inline;
+    display: inline-block;
     font-size: 1rem ;
     text-transform: uppercase;
     background-color: hsl(207, 94%, 50%);
@@ -482,7 +481,7 @@ li a:focus, a:hover{
     transition: all 0.4s ease;
 }
 .reset-btn{
-    display: inline;
+    display: inline-block;
     font-size: 1rem ;
     text-transform: uppercase;
     background-color: hsl(210, 6%, 69%);
