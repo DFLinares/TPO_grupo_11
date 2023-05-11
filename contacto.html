@@ -25,7 +25,7 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                        <li><button type="button" onclick="cambiarModo()"><img src="img/Tema.png" class="responsive"></li>
+                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"></li>
                             <li id="fondonegro"><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
                             <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
                             <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
@@ -62,7 +62,7 @@
                                 placeholder="Ingrese su e-mail">
                             <!--Tipo de Consulta--><select class="form-control"
                                 aria-label="Seleccione su tipo de Mensaje">
-                                <option selected>Tipo de Mensaje</option>
+                                <option selected id="mensaje">Tipo de Mensaje</option>
                                 <option value="1">Deseo obtener mayor Info</option>
                                 <option value="2">Mis Sugerencias</option>
                                 <option value="3">Deseo suscribirme al Newslatter</option>
@@ -70,7 +70,7 @@
                                 <option value="5">Otros</option>
                             </select>
                         </div>
-                        <!--Mensaje-Consulta--><textarea class="form-control" id="Mensaje"
+                        <!--Mensaje-Consulta--><textarea class="form-control" id="mensaje"
                             rows="15">Escriba su Mensaje</textarea>
                         <!--Botones--><input type="submit" class="send-btn">
                         <input type="reset" class="reset-btn">

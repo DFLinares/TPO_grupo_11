@@ -2,6 +2,8 @@
 *{
     padding: 0;
     margin: 0;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #63c8f0;
 }
 
 /*Selector de Temas y sus botones*/
@@ -68,6 +70,10 @@ li a:focus, a:hover{
 }
 
 #fondonegro :hover{
+    background-color: #000000;
+}
+
+#fondobtn{
     background-color: #000000;
 }
 
@@ -151,21 +157,49 @@ li a:focus, a:hover{
 
     }
 
+    .orderservices {
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--primary-shadow);
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 900px;
+        min-height: 1000px;
+    }
     .item3{
         max-width: 320px;
-        height: 150px;
-        margin: 1px;
+        height: 180px;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+        padding: 20px;
+        margin: 10px;
 
     }
 
     .item4{
-        max-width: 680px;
-        height: 300px;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+        padding: 20px;
+        margin: 10px;
+        max-width: 755px;
+        height: 320px;
+        justify-content: right;
     }
 
     .item5{
-        max-width: 320px;
-        height: 280px;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+        padding: 20px;
+        margin: 10px;
+        max-width: 755px;
+        height: 180px;
+        text-size-adjust: 10px;
+    }
+
+    .item6{
+        width: 755px;
+        height: 50px;
         text-size-adjust: 10px;
         margin: 5px;
     }
@@ -403,17 +437,16 @@ li a:focus, a:hover{
     padding-bottom: 1%;
 }
 
-.bio-gral p.{
+.bio-gral p{
     font-size: medium;
     text-align: center;
     padding-bottom: 10%;
 }
 
 .bio-formulario{
-    height: 80%;
+    height: 50%;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 5%;
     padding-left: 25%;
     padding-right: 30%;
     padding-bottom: 30%;
@@ -421,7 +454,8 @@ li a:focus, a:hover{
 
 .form-control{
     width: 100%;
-    padding: 0.8rem;
+    max-height: 50px;
+    padding: 1rem;
     margin: 0.6rem 0.8rem;
     display: block;
     font-size: 16px;
@@ -429,6 +463,11 @@ li a:focus, a:hover{
     border-radius: 5px;
     border: 1.5px soli #c7c7c7;
 }
+
+#mensaje{
+   width: 415px;
+}
+
 .send-btn{
     display: inline;
     font-size: 1rem ;
@@ -456,6 +495,17 @@ li a:focus, a:hover{
     transition: all 0.4s ease;
 }
 
-
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 10%;
+    cursor: pointer;
+}
+  
+.flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+}
+  
 
    
