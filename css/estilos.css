@@ -509,6 +509,10 @@ li a:focus, a:hover{
         max-width: 744px;
     }
 
+    .ordenparrafo{
+        font-size: 14px;
+    }
+
     .item{
         max-width: 250px;
     }
