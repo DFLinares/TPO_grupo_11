@@ -37,7 +37,6 @@ nav{
 
 .logo{
     position:absolute;
-    color: #FFFFFF;
     max-height: 75px;
     left: 20px;
     cursor: pointer;
@@ -289,6 +288,8 @@ li a:focus, a:hover{
 
     .video{
         margin-bottom: 10px;
+        width: 350px;
+        height: 200px;
     }
 
     aside > div{
@@ -513,4 +514,104 @@ li a:focus, a:hover{
 }
   
 
-   
+ @media(max-width: 1200px) {
+    
+    /*Nav*/
+
+    .nav-menu ul{
+        margin-right: 70px;
+    }
+
+    /*main*/
+
+    .orderservices{
+        padding: 0;
+        max-width: 744px;
+    }
+
+    .item{
+        max-width: 250px;
+    }
+
+    .item1{
+        max-width: 640px;
+    }
+
+    .item3{
+        max-width: 250px;
+    }
+
+    .item4{
+        max-width: 600px;
+    }
+
+    .item5{
+        max-width: 250px;
+    }
+
+    .imgbox{
+        max-width: 250px;
+    }
+
+    .gral-img img{
+        max-width: 600px;
+        padding-bottom: 0%;
+    }
+
+    img{
+        max-width: 640px;
+    }
+
+    .bio-gral p{
+        padding-bottom: 2%;
+    }
+
+    .send-btn{
+        padding: 0.6rem 1rem;
+        margin: 0.6rem;
+    }
+
+    .reset-btn {
+        padding: 0.6rem 0.5rem;
+        margin: 0.6rem;
+    }
+
+    /*aside*/
+
+    .video{
+        width: 200px;
+        height: 150px;
+        margin-right: 30px;
+    }
+
+    .imgbox1{
+        height: 40px;
+
+    }
+
+    #tamañoaside p{
+        width: 100px;
+        font-size: 8px;
+        margin-right: 30px;
+    }
+
+    .title-aside{
+        margin-right: 30px;
+    }
+
+    .flecha-arriba{
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 20px;
+    }
+
+    /*Pie de Pagina*/
+
+    .copy p{
+      font-size: 15px;
+      padding-right: 0px;
+      margin-right: 150px;
+      text-align: center;
+    }
+
+ }  
