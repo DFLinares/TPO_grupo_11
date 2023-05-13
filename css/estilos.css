@@ -102,6 +102,8 @@ li a:focus, a:hover{
     }
 
     .ordermain {
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--primary-shadow);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -115,6 +117,8 @@ li a:focus, a:hover{
     }
 
     .item1{
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
         max-width: 680px;
         height: 520px;
         overflow: hidden;
@@ -149,6 +153,8 @@ li a:focus, a:hover{
     }
 
     .item{
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
         max-width: 320px;
         height: 280px;
         text-size-adjust: 10px;
@@ -209,10 +215,9 @@ li a:focus, a:hover{
         max-height: 180px;
     }
 
-    articulo.ordenarticulo{
+    .ordenarticulo{
         display: flex;
         flex-wrap: wrap;
-        border: solid #000000;
     }
 
     .proptitulo{
@@ -310,8 +315,6 @@ li a:focus, a:hover{
         color: #63c8f0;
     }
 
-
-
     .imgbox1{
         max-width: 100px;
         max-height: 56px;
@@ -323,6 +326,7 @@ li a:focus, a:hover{
         position: relative;
         border-top: #000000 solid 1px;
     }
+
     .footer {
         color: #ffffff;
     }
