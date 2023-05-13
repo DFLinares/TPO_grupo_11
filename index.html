@@ -153,6 +153,9 @@
             </div>
         </footer>
     </div>
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+        <img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/>
+    </i>
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
         function cambiarModo() { 
@@ -160,5 +163,16 @@
           cuerpoweb.classList.toggle("oscuro"); 
         } 
       </script>
+          <script type="text/javascript"> 
+            // funcionalidad de desplazar hacia arriba
+            const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
+            desplazarArriba.addEventListener("click", () => {
+                window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            });
+        </script> 
 </body>
 </html>

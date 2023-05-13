@@ -28,6 +28,7 @@ nav{
 }
 
 .nav-menu{
+    box-shadow: 0 3px 10px var(--secondary-shadow);
     background: #000000;
     height: 80px;
     width: 100%;
@@ -500,6 +501,7 @@ li a:focus, a:hover{
 
 .desplazarse-hacia-arriba {
     position: fixed;
+    align-self: self-start;
     right: 0.5%;
     bottom: 10%;
     cursor: pointer;
