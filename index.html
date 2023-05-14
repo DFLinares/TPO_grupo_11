@@ -22,7 +22,7 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"></li>
+                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"><script src="scripts/cambiarModo.js"></script></li>
                             <li id="fondonegro"><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
                             <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
                             <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
@@ -154,25 +154,8 @@
         </footer>
     </div>
     <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
-        <img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/>
+        <img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/><script src="scripts/desplazarArriba.js"></script>
     </i>
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"> 
-        function cambiarModo() { 
-          var cuerpoweb = document.body; 
-          cuerpoweb.classList.toggle("oscuro"); 
-        } 
-      </script>
-          <script type="text/javascript"> 
-            // funcionalidad de desplazar hacia arriba
-            const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
-            desplazarArriba.addEventListener("click", () => {
-                window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth",
-              });
-            });
-        </script> 
 </body>
 </html>
