@@ -743,6 +743,10 @@ li a:focus, a:hover{
         left: 30%;
     }
 
+    .nav-opciones{
+        height: 8vh;
+    }
+ 
     /*Main*/
 
     .ordermain > div {
