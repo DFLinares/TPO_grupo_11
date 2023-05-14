@@ -150,6 +150,7 @@ li a:focus, a:hover{
     }
     .item1 a h2{
         margin-top: 12px;
+        margin-left: 5px;
     }
 
     #nodecoracion{
@@ -734,7 +735,7 @@ li a:focus, a:hover{
 
  }
 
- @media(max-width:768px) {
+ @media(max-width:768px){
 
     /*Nav*/
 
@@ -801,6 +802,78 @@ li a:focus, a:hover{
     .copy p {
         font-size: 10px;
         margin-right: 70px;
+    }
+
+ }
+
+ @media(max-width:576px){
+
+    /*Nav*/
+
+    .logo{
+        left: 20%;
+    }
+
+    .nav-opciones{
+        height: 15vh;
+    }
+
+    .nav-opciones li a {
+    padding: 5px 15px;
+    }
+
+    /*Main*/
+
+    .ordermain > div {
+        margin: 15px;
+    }
+
+    .imgbox{
+        width: 150px;
+        height: 80px;
+    }
+
+    .main p {
+        padding: 5px;
+        font-size: 12px;
+        text-align:start;
+    }
+
+    .item{
+        width: 150px;
+        height: 150px;
+        margin: 30px 10px;
+    }
+
+    .openai{
+        width: 370px;
+        height: 250px;
+    }
+
+    .imgbox1{
+        width: 70px;
+        height: 40px;
+    }
+
+    #tamañoaside p{
+        font-size: 7px;
+        width: 60px;
+        text-align: start;
+    }
+
+    .item1{
+        width: 360px;
+        height: 400px
+    }
+
+    .item2{
+        width: 150px;
+    }
+
+    .video{
+        width: 150px;
+        height: 100px;
+        margin: 15px;
     }
 
  }
