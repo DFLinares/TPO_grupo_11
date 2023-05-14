@@ -27,6 +27,15 @@ nav{
     z-index: 1;
 }
 
+.checkbtn{
+    font-size: 25px;
+    float: right;
+    line-height: 60px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
 .nav-menu{
     box-shadow: 0 3px 10px var(--secondary-shadow);
     background: #000000;
@@ -145,7 +154,7 @@ li a:focus, a:hover{
 
     #nodecoracion{
         text-decoration: none;
-        color: #63c8f0;
+        color: #0096d4;
     }
 
     #nodecoracion :hover{
@@ -294,7 +303,7 @@ li a:focus, a:hover{
         display: flex;
         max-height: 56px;
         text-decoration: none;
-        color: #63c8f0;
+        color: #0096d4;
     }
 
     .imgbox1{
@@ -533,6 +542,10 @@ li a:focus, a:hover{
         max-width: 250px;
     }
 
+    .item6{
+        margin: 5px 55px;
+    }
+
     .imgbox{
         max-width: 250px;
     }
@@ -599,3 +612,112 @@ li a:focus, a:hover{
     }
 
  }  
+
+ @media(max-width: 992px){
+
+    /*Nav*/
+
+    .logo{
+        left: 35%;
+    }
+
+    .checkbtn{
+        display: block;
+        color: #ffffff;
+    }
+
+    .nav-opciones{
+        position: fixed;
+        width: 100%;
+        height: 7vh;
+        background-color: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-opciones li{
+        display: inline;
+
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    /*Main*/
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 80px 1fr 0.5fr 80px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .nav-menu { grid-area: 1 / 1 / 2 / 6; }
+        .main { grid-area: 2 / 1 / 3 / 6; }
+        .aside { grid-area: 3 / 1 / 4 / 6; }
+        .footer { grid-area: 4 / 1 / 5 / 6; }
+
+    /*aside*/
+
+    .aside{
+        justify-content: space-evenly;
+    }
+
+    .title-aside{
+        margin: 40px 300px 20px 300px;
+    }
+
+    #tamañoaside{
+        margin: 10px;
+    }
+
+    .imgbox1{
+        width: 200px;
+        height: 100px;
+    }
+
+    .item2{
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--primary-shadow);
+        max-height: 100px;
+    }
+
+    #tamañoaside p{
+        font-size: 9px;
+    }
+
+    .video{
+        margin: 25px 30px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .form-control {
+        padding: 0.5rem;
+    }
+
+    .reset-btn {
+        padding: 0.2rem 0.8rem;
+        margin: 0.3rem;
+    }
+
+    .send-btn {
+        padding: 0.2rem 1rem;
+        margin: 0.3rem;
+    }
+
+    /*Pie de Pagina*/
+
+    .copy p{
+        font-size: 12px;
+    }
+
+ }
+
+ @media(max-width:768px) {
+    
+ }
