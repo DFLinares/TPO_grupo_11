@@ -686,6 +686,22 @@ li a:focus, a:hover{
         max-height: 100px;
     }
 
+    .item3{
+        max-width: 200px;
+    }
+
+    .item4{
+        max-width: 500px;
+    }
+
+    .item5{
+        max-width: 200px;
+    }
+
+    .item6{
+        margin: 5px 55px;
+    }
+
     #tamañoaside p{
         font-size: 9px;
     }
@@ -719,5 +735,72 @@ li a:focus, a:hover{
  }
 
  @media(max-width:768px) {
+
+    /*Nav*/
+
+    .logo{
+        left: 30%;
+    }
+
+    /*Main*/
+
+    .ordermain > div {
+        margin: 20px;
+
+    }
+
+    .imgbox{
+        width: 200px;
+        height: 140px;
+    }
+
+    .ordenparrafo{
+        font-size: 11px;
+    }
+
+    .item{
+        width: 200px;
+        height: 260px;
+    }
+
+    .item1{
+        width: 500px;
+        height: 430px;
+    }
+
+    .item3{
+        height: 140px;
+    }
+
+    .item4{
+        height: 250px;
+    }
+
+    .item5{
+        height: 140px;
+    }
+
+    .item6{
+        margin: 5px 100px;
+    }
+
+    .openai{
+        width: 500px;
+        height: 300px;
+    }
     
+    /*Aside*/
+
+    .video{
+        width: 200px;
+        height: 150px;
+    }
+
+    /*Pie de pagina*/
+
+    .copy p {
+        font-size: 10px;
+        margin-right: 70px;
+    }
+
  }
