@@ -22,7 +22,7 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"></li>
+                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"><script src="scripts/cambiarModo.js"></script></li>
                             <li id="fondonegro"><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
                             <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
                             <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
@@ -78,6 +78,24 @@
             </div>
         </main>
         <aside class="aside">
+            <div class="item7">
+                <section class="top-banner">
+                   <div>
+                     <strong><h1>El Tiempo en tu Ciudad</h1></strong><br>
+                     <form>
+                      <input type="text" placeholder="Ingresa tu Ciudad" autofocus>
+                      <button type="submit">Enviar</button>
+                      <span class="msg"></span>
+                    </form>
+                    </div>
+                </section>
+                <section class="ajax-section">
+                  <div class="top-banner">
+                     <ul class="cities"></ul>
+                  </div>
+                </section>
+            <script src="scripts/tiempo.js"></script>
+            </div>
             <img src="/img/noticiasdestacadas2.png" alt="NOTICIAS DESTACADAS" class="title-aside">
             <div class="item2">
                 <a href="/noticia1.html" id="tamañoaside">
@@ -122,7 +140,7 @@
                 </a>
             </div>
             <img src="/img/Noticiastechzone2.png" alt="NOTICIAS TECH ZONE" class="title-aside">
-            <iframe width="350" height="200" class="video" src="https://www.youtube.com/embed/Asij7V0hlPM" 
+            <iframe  class="video" src="https://www.youtube.com/embed/Asij7V0hlPM" 
             title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
@@ -153,12 +171,9 @@
             </div>
         </footer>
     </div>
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+        <img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/><script src="scripts/desplazarArriba.js"></script>
+    </i>
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"> 
-        function cambiarModo() { 
-          var cuerpoweb = document.body; 
-          cuerpoweb.classList.toggle("oscuro"); 
-        } 
-      </script>
 </body>
 </html>

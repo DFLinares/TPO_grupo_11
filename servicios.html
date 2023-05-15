@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="fonts/nikoleta/stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/estilos.css">
     
     <title>MundoIT | Servicios | Experience IT </title>
@@ -24,11 +23,11 @@
                     <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
                 </a>
                     <ul class="nav-opciones">
-                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"></li>
-                            <li id="fondonegro"><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
-                            <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
-                            <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
-                            <li id="fondonegro"><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
+                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"><script src="scripts/cambiarModo.js"></script></li>
+                        <li id="fondonegro"><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
+                        <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
+                        <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
+                        <li id="fondonegro"><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
                     </ul>
             </nav>
         </header>
@@ -82,7 +81,7 @@
         </span>
     </div> 
     <div class="item6">
-        <h2>Otras Soluciones de MundoIT</h2><br>
+        <h2 id="tamañoletra">Otras Soluciones de MundoIT</h2><br>
     </div>
     <div class="item3"> 
          <span><strong>CiberSeguridad</strong></span>
@@ -92,7 +91,7 @@
             <img src="/img/cybersec.jpeg" alt="Planificación" class="imgbox">
     </div>
     <div class="item3"> 
-        <span><strong>Centros de Cómputos</strong></span><br>
+        <span><strong>Datacenters</strong></span><br>
                <p class="ordenparrafo">Datacenters bajo el concepto de Software Defined, que permite flexibilizar infraestructura otorgando escalabilidad e independencia del hardware sea éste hiperconvergente o tradicional.</p>
     </div>
     <div class="item5">
@@ -113,7 +112,6 @@
    <div class="item5">
         <img src="/img/networking.jpeg" alt="Planificación" class="imgbox">
     </div>
-    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/></i>
 </span>
 </div>  
 </section>
@@ -195,25 +193,10 @@
             </div>
         </footer>
     </div>
-
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+        <img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/><script src="scripts/desplazarArriba.js"></script>
+    </i>
     <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"> 
-        function cambiarModo() { 
-          var cuerpoweb = document.body; 
-          cuerpoweb.classList.toggle("oscuro"); 
-        } 
-      </script>
-    <script type="text/javascript"> 
-    // funcionalidad de desplazar hacia arriba
-    const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
-    desplazarArriba.addEventListener("click", () => {
-        window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    });
-    </script> 
 </body>
 
 </html>
