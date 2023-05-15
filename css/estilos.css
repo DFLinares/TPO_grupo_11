@@ -400,6 +400,84 @@ li a:focus, a:hover{
         height: auto;
         max-height: 22px; 
     }
+   
+    /* INICIO QUIENES SOMOS....*/
+
+    section#quienesSomos {
+        position: relative;
+        margin: auto;
+        margin-top: 10px;
+        width: 1000px;
+        /*height: 299px; */
+    }
+
+    section#quienesSomos h1{
+        position: relative;
+        top: 25px;
+        left: 30px;
+        margin-left: 20px;
+        font-weight: 900pt;
+        font-size: 30px;
+        }
+
+    section#quienesSomos hr{
+        position: relative;
+        top: 26px;
+        width: 890px;
+        margin: auto;
+        margin-top: 5px;
+        border: 2px solid #000000;
+    }
+
+    .itemQuien{
+        border-radius: 50px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+       padding: 1px;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right:50px ;
+        width: 950px;
+        height: 320px;
+        justify-content: right;
+    }
+
+    .ordenparrafoQuienes{
+        width: 899px;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16pt;
+        text-align: justify;
+        line-height: 40px;
+
+    }
+
+    .itemQuienes2{
+        float: left;
+        border-radius: 50px;
+        box-shadow: 0 3px 10px var(--primary-shadow);
+        padding: 40px;
+       /* margin: 2px;*/
+        width: 100px;
+        height: 190px;
+        margin-right: 20px;
+        margin-left: 1px;
+        margin-bottom: 20px;
+        text-size-adjust: 30px;
+        justify-content: left;
+        
+        
+        
+    }
+
+    .imgboxQuienes{
+        float: left;
+        max-width: 350px;
+        max-height: 200px;
+        
+    }
+    /*FIN DE SECCION QUIENES SOMOS...*/
+        
     /*SECCION CONTACTOS, esta como seccion bio*/
    
 
