@@ -220,6 +220,17 @@ li a:focus, a:hover{
         margin: 5px;
     }
 
+    .item7{
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+        width: 380px;
+        max-width: 680px;
+        height: 250px;
+        overflow: hidden;
+        margin: 20px;
+        justify-content: center;
+    }
+
     .imgbox{
         max-width: 320px;
         max-height: 180px;
@@ -502,7 +513,95 @@ li a:focus, a:hover{
     width: 3rem;
     height: 3rem;
 }
+
+.top-banner {
+    color: var(--text_light);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.top-banner form {
+    position: relative;
+    display: flex;
+       
+}
   
+.top-banner form input {
+    font-size: 1rem;
+    height: 10px;
+    max-width: 250px;
+    min-width: 110px;
+    padding: 5px 5px 5px;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    margin-left: 10px; 
+    
+}
+  
+.top-banner form button {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 2.5px 2.5px;
+    margin-left: 2.5px;
+    border-radius: 2.5px;
+    transition: background 0.3s ease-in-out;
+    
+}
+  
+.top-banner form .msg {
+    position: absolute;
+    bottom: -25px;
+    margin-left: 10px;
+    left: 0;
+    max-width: 450px;
+    min-height: 10px;
+}
+
+.ajax-section {
+    margin: 0px 0 0px;
+      
+}
+  
+.ajax-section .cities {
+    display: displaybox;
+       
+}
+  
+.ajax-section .city {
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 50px; 
+}
+  
+.ajax-section .city::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+    background: var(--text_light);
+}
+
+.ajax-section figcaption {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+       
+}
+  
+.ajax-section .city-temp {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text_dark);
+           
+}
+  
+.ajax-section .city sup {
+    font-size: 0.5em;
+    
+}
+ 
 
  @media(max-width: 1200px) {
 
@@ -545,6 +644,10 @@ li a:focus, a:hover{
 
     .item6{
         margin: 5px 55px;
+    }
+
+    .item7{
+        max-width: 250px;
     }
 
     .imgbox{
@@ -703,6 +806,11 @@ li a:focus, a:hover{
         margin: 5px 55px;
     }
 
+    .item7{
+        max-width: 200px;
+        font-size: 9px
+    }
+
     #tamañoaside p{
         font-size: 9px;
     }
@@ -787,6 +895,10 @@ li a:focus, a:hover{
 
     .item6{
         margin: 5px 100px;
+    }
+
+    .item7{
+        max-width: 200px;
     }
 
     .openai{
@@ -923,6 +1035,10 @@ li a:focus, a:hover{
         width: 130px;
         height: 80px;
         padding: 10px;
+    }
+
+    .item7{
+        max-width: 200px;
     }
 
     .video{
