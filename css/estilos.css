@@ -514,6 +514,7 @@ li a:focus, a:hover{
     height: 3rem;
 }
 
+/*TIEMPO*/
 .top-banner {
     color: var(--text_light);
     margin-left: 10px;
@@ -529,7 +530,7 @@ li a:focus, a:hover{
 .top-banner form input {
     font-size: 1rem;
     height: 10px;
-    max-width: 250px;
+    max-width: 200x;
     min-width: 110px;
     padding: 5px 5px 5px;
     border-bottom: 1px solid;
