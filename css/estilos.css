@@ -1002,10 +1002,6 @@ li a:focus, a:hover{
         font-size: 11px;
     }
 
-    section#quienesSomos h1{
-        
-    }
-
     .itemQuien{
         width: 540px;
         margin-left: 25px;
@@ -1093,6 +1089,12 @@ li a:focus, a:hover{
         width: 377px;
     }
 
+    .itemQuien{
+        width: 400px;
+        height: 400px;
+    
+    }
+
     .imgbox{
         width: 150px;
         height: 80px;
@@ -1116,6 +1118,10 @@ li a:focus, a:hover{
         padding: 5px;
         font-size: 12px;
         text-align:justify;
+    }
+
+    .ordenparrafoQuienes{
+        width: 350px;
     }
 
     .item{
