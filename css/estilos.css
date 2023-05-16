@@ -896,7 +896,7 @@ li a:focus, a:hover{
     }
 
     .title-aside{
-        margin: 40px 300px 20px 300px;
+        margin: 30px 300px 20px 300px;
     }
 
     #tamañoaside{
@@ -932,6 +932,7 @@ li a:focus, a:hover{
 
     .item7{
         max-width: 200px;
+        height: 150px;
         font-size: 9px
     }
 
@@ -940,9 +941,9 @@ li a:focus, a:hover{
     }
 
     .video{
-        margin: 25px 30px;
-        width: 300px;
-        height: 200px;
+        margin: 0px 0px;
+        width: 270px;
+        height: 150px;
     }
 
     .form-control {
@@ -1163,6 +1164,7 @@ li a:focus, a:hover{
 
     .item7{
         width: 210px;
+        height: 300px;
     }
 
     .video{
