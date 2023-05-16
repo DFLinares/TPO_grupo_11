@@ -432,7 +432,7 @@ li a:focus, a:hover{
         position: relative;
         margin: auto;
         margin-top: 10px;
-        width: 1000px;
+        max-width: 1000px;
         /*height: 299px; */
     }
 
@@ -444,15 +444,6 @@ li a:focus, a:hover{
         font-weight: 900pt;
         font-size: 30px;
         }
-
-    section#quienesSomos hr{
-        position: relative;
-        top: 26px;
-        width: 890px;
-        margin: auto;
-        margin-top: 5px;
-        border: 2px solid #000000;
-    }
 
     .itemQuien{
         border-radius: 50px;
@@ -737,10 +728,6 @@ li a:focus, a:hover{
         font-size: 14px;
     }
 
-    section#quienesSomos hr{
-        width: 735px;
-    }
-
     section#quienesSomos h1{
         margin-left: 100px;
     }
@@ -1015,26 +1002,18 @@ li a:focus, a:hover{
         font-size: 11px;
     }
 
-    section#quienesSomos{
-        width: 600px;
-    }
-
-    section#quienesSomos hr{
-        width: 540px;
-    }
-
     section#quienesSomos h1{
         
     }
 
     .itemQuien{
-        width: 580px;
-        margin-left: 8px;
+        width: 540px;
+        margin-left: 25px;
     }
 
     .ordenparrafoQuienes{
-        width: 540px;
-        font-size: 12px;
+        width: 500px;
+        font-size: 10px;
     }
 
     .item{
