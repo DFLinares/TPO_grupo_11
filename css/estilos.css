@@ -737,6 +737,25 @@ li a:focus, a:hover{
         font-size: 14px;
     }
 
+    section#quienesSomos hr{
+        width: 735px;
+    }
+
+    section#quienesSomos h1{
+        margin-left: 100px;
+    }
+
+    .itemQuien{
+        width: 735px;
+        margin-left: 50px;
+    }
+
+    .ordenparrafoQuienes{
+        width: 700px;
+        font-size: 15px;
+    }
+
+
     .item{
         max-width: 250px;
     }
@@ -994,6 +1013,28 @@ li a:focus, a:hover{
 
     .ordenparrafo{
         font-size: 11px;
+    }
+
+    section#quienesSomos{
+        width: 600px;
+    }
+
+    section#quienesSomos hr{
+        width: 540px;
+    }
+
+    section#quienesSomos h1{
+        
+    }
+
+    .itemQuien{
+        width: 580px;
+        margin-left: 8px;
+    }
+
+    .ordenparrafoQuienes{
+        width: 540px;
+        font-size: 12px;
     }
 
     .item{
