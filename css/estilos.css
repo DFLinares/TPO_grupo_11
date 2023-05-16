@@ -221,14 +221,39 @@ li a:focus, a:hover{
     }
 
     .item7{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
         border-radius: 11px;
         box-shadow: 0 3px 10px var(--secondary-shadow);
+        background-color:#f1eded;
         width: 380px;
         max-width: 680px;
         height: 250px;
         overflow: hidden;
         margin: 20px;
         justify-content: center;
+    }
+
+    .tituloapi{
+        font-family: sans-serif;
+        font-size:large;
+        text-align: center;
+        background-color: #000000;
+        color:#63c8f0;
+        border-radius: 3px;
+    }
+
+    .estiloingr{
+        border-radius: 3px;
+    }
+
+    .estilobtn{
+        color:#63c8f0;
+        background-color: #54555a;
+        width: 45px;
+        height: 25px;
+        margin-top: 8px;
     }
 
     .imgbox{
@@ -625,8 +650,7 @@ li a:focus, a:hover{
     min-width: 110px;
     padding: 5px 5px 5px;
     border-bottom: 1px solid;
-    margin-top: 10px;
-    margin-left: 10px; 
+    margin-top: 10px; 
     
 }
   
@@ -662,8 +686,7 @@ li a:focus, a:hover{
   
 .ajax-section .city {
     border-radius: 10px;
-    margin-top: 40px;
-    margin-left: 50px; 
+    margin-top: 40px; 
 }
   
 .ajax-section .city::after {
@@ -740,6 +763,15 @@ li a:focus, a:hover{
 
     .item7{
         max-width: 250px;
+    }
+
+    .tituloapi{
+        font-size:small;
+    }
+
+    .top-banner form input{
+        width: 50px;
+        font-size: 10px;
     }
 
     .imgbox{
@@ -1130,7 +1162,7 @@ li a:focus, a:hover{
     }
 
     .item7{
-        max-width: 200px;
+        width: 210px;
     }
 
     .video{
