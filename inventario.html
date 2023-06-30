@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Mundo IT</title>
+</head>
+<body>
+    <div class="parent"> 
+        <header>
+            <nav class="nav-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                <a href="index.html" title="Ir a Home">
+                    <img src="img/Mundo IT horizontal.png" alt="Mundo IT" class="logo">
+                </a>
+                    <ul class="nav-opciones">
+                        <li><button type="button" onclick="cambiarModo()" id="fondobtn"><img src="img/Tema.png" class="responsive"><script src="scripts/cambiarModo.js"></script></li>
+                            <li id="fondonegro"><a href="index.html"><img src="img/home.png" class="responsive"></a></li>
+                            <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
+                            <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
+                            <li id="fondonegro"><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
+                            <li id="fondonegro"><a href="inventario.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
+                    </ul>
+            </nav>
+        </header>  
+        <main class="main">
+            <div id="app" class="container">
+                <br>
+                <h1>Productos</h1>
+                
+                <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
+    
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando .....</p>
+    
+                    </section>
+                    <section v-else>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Stock</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="producto in productos" class="">
+                                        <td scope="row">{{producto.id}}</td>
+                                        <td>{{producto.nombre}}</td>
+                                        <td>{{producto.precio}}</td>
+                                        <td>{{producto.stock}}</td>
+                                        <td>
+                                            <img width="60" :src="producto.imagen" :alt="producto.nombre">
+    
+    
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)"    >Eliminar</button>
+                                            
+                                            <a class="btn btn-primary" :href="'producto_editar.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen" >Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </main>  
+        <footer class="footer">
+            <div class="footer-contenedor">
+                <div class="social">
+                    <label><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></label>
+                    <label><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></label>
+                    <label><a href="https://www.google.com/?authuser=0" target="_blank"><i class="fa-brands fa-google"></i></a></label>
+                    <label><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></label>
+                </div>
+                <div class="copy">
+                    <p>Comision #23034 - Grupo 11 &copy; 2023 Todos los Derechos Reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+        <img src="img/arriba.gif" class="flecha-arriba" alt="desplazarse-hacia-arriba"/><script src="scripts/desplazarArriba.js"></script>
+    </i>
+    <script src="https://kit.fontawesome.com/22ed8f933d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="./js/main.js"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="./scripts/productos.js"></script>
+</body>
+</html>
