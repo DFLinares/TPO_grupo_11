@@ -42,13 +42,13 @@ function modificar() {
     fetch(url, options)
         .then(function () {
             console.log("modificado")
-            alert("Registro modificado")
+            alert("Producto modificado correctamente")
             window.location.href = "./inventario.html";  
         //NUEVO,  si les da error el fetch  comentar esta linea que puede dar error  
         })
         .catch(err => {
             //this.errored = true
             console.error(err);
-            alert("Error al Modificar")
+            alert("No se pudo Modificar")
         })      
 }

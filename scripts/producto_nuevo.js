@@ -20,7 +20,7 @@ function guardar() {
     fetch(url, options)
         .then(function () {
             console.log("creado")
-            alert("Grabado")
+            alert("Producto agregado correctamente")
             // Devuelve el href (URL) de la página actual
             window.location.href = "./inventario.html";  
             // Handle response we get from the API
