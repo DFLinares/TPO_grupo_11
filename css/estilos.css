@@ -140,9 +140,9 @@ li a:focus, a:hover{
         object-fit: cover;
     }
 
-    img:hover{
-        transform: scale(1);
-    }
+    /*img:hover{
+        transform: scale(1.1);
+    }*/
 
     .main p{
         padding: 10px;
