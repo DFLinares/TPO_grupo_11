@@ -10,6 +10,6 @@ document.getElementById("header").innerHTML=`<nav class="nav-menu">
             <li id="fondonegro"><a href="servicios.html"><img src="img/SERVICIOS.png" class="responsive"></a></li>
             <li id="fondonegro"><a href="quienes_somos.html"><img src="img/Nosotros.png" class="responsive" ></a></li> 
             <li id="fondonegro"><a href="contacto.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
-            <li id="fondonegro"><a href="inventario.html"><img src="img/CONTACTO.png" class="responsive"></a></li>
+            <li id="fondonegro"><a href="inventario.html"><img src="img/inventario.png" class="responsive"></a></li>
     </ul>
 </nav>`
