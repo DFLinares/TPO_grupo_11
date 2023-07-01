@@ -28,7 +28,7 @@ const { createApp } = Vue
                 })
         },
         eliminar(producto) {
-            const url = 'https://mundoitcrud.pythonanywhere.com/productos' + producto;
+            const url = 'https://mundoitcrud.pythonanywhere.com/productos/'+ producto;
             var options = {
                 method: 'DELETE',
             }
